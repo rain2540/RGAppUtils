@@ -9,8 +9,8 @@
 #ifndef RGAppUtility_h
 #define RGAppUtility_h
 
-#import "App Common Classes/RGAppConstant.h"
-#import "Cocoa Types/NSObject+RGAppUtility.h"
-#import "Cocoa Types/NSString+RGAppUtility.h"
+#import "RGAppConstant.h"
+#import "NSObject+RGAppUtility.h"
+#import "NSString+RGAppUtility.h"
 
 #endif /* RGAppUtility_h */

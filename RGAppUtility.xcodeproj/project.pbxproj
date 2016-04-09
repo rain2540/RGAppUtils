@@ -13,8 +13,8 @@
 		B763FE8E1CB8E5EF00F50724 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B763FE8C1CB8E5EF00F50724 /* Main.storyboard */; };
 		B763FE901CB8E5EF00F50724 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B763FE8F1CB8E5EF00F50724 /* Assets.xcassets */; };
 		B763FE931CB8E5EF00F50724 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B763FE911CB8E5EF00F50724 /* LaunchScreen.storyboard */; };
-		B763FEA61CB8ED7200F50724 /* NSString+RGAppUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = B763FEA51CB8ED7200F50724 /* NSString+RGAppUtility.m */; };
-		B763FEAA1CB8FE8500F50724 /* NSObject+RGAppUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = B763FEA91CB8FE8500F50724 /* NSObject+RGAppUtility.m */; };
+		B79C3A461CB93CAE003DD9A5 /* NSObject+RGAppUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = B79C3A421CB93CAE003DD9A5 /* NSObject+RGAppUtility.m */; };
+		B79C3A471CB93CAE003DD9A5 /* NSString+RGAppUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = B79C3A441CB93CAE003DD9A5 /* NSString+RGAppUtility.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,12 +28,12 @@
 		B763FE8F1CB8E5EF00F50724 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B763FE921CB8E5EF00F50724 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B763FE941CB8E5EF00F50724 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B763FE9D1CB8EAD000F50724 /* RGAppConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RGAppConstant.h; sourceTree = "<group>"; };
-		B763FEA41CB8ED7200F50724 /* NSString+RGAppUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RGAppUtility.h"; sourceTree = "<group>"; };
-		B763FEA51CB8ED7200F50724 /* NSString+RGAppUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RGAppUtility.m"; sourceTree = "<group>"; };
 		B763FEA71CB8F64F00F50724 /* RGAppUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RGAppUtility.h; sourceTree = "<group>"; };
-		B763FEA81CB8FE8500F50724 /* NSObject+RGAppUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+RGAppUtility.h"; sourceTree = "<group>"; };
-		B763FEA91CB8FE8500F50724 /* NSObject+RGAppUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RGAppUtility.m"; sourceTree = "<group>"; };
+		B79C3A411CB93CAE003DD9A5 /* NSObject+RGAppUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+RGAppUtility.h"; sourceTree = "<group>"; };
+		B79C3A421CB93CAE003DD9A5 /* NSObject+RGAppUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RGAppUtility.m"; sourceTree = "<group>"; };
+		B79C3A431CB93CAE003DD9A5 /* NSString+RGAppUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RGAppUtility.h"; sourceTree = "<group>"; };
+		B79C3A441CB93CAE003DD9A5 /* NSString+RGAppUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RGAppUtility.m"; sourceTree = "<group>"; };
+		B79C3A451CB93CAE003DD9A5 /* RGAppConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGAppConstant.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,29 +92,13 @@
 			isa = PBXGroup;
 			children = (
 				B763FEA71CB8F64F00F50724 /* RGAppUtility.h */,
-				B763FE9B1CB8E68800F50724 /* App Common Classes */,
-				B763FE9C1CB8E68800F50724 /* Cocoa Types */,
+				B79C3A451CB93CAE003DD9A5 /* RGAppConstant.h */,
+				B79C3A411CB93CAE003DD9A5 /* NSObject+RGAppUtility.h */,
+				B79C3A421CB93CAE003DD9A5 /* NSObject+RGAppUtility.m */,
+				B79C3A431CB93CAE003DD9A5 /* NSString+RGAppUtility.h */,
+				B79C3A441CB93CAE003DD9A5 /* NSString+RGAppUtility.m */,
 			);
 			path = RGAppUtility;
-			sourceTree = "<group>";
-		};
-		B763FE9B1CB8E68800F50724 /* App Common Classes */ = {
-			isa = PBXGroup;
-			children = (
-				B763FE9D1CB8EAD000F50724 /* RGAppConstant.h */,
-			);
-			path = "App Common Classes";
-			sourceTree = "<group>";
-		};
-		B763FE9C1CB8E68800F50724 /* Cocoa Types */ = {
-			isa = PBXGroup;
-			children = (
-				B763FEA81CB8FE8500F50724 /* NSObject+RGAppUtility.h */,
-				B763FEA91CB8FE8500F50724 /* NSObject+RGAppUtility.m */,
-				B763FEA41CB8ED7200F50724 /* NSString+RGAppUtility.h */,
-				B763FEA51CB8ED7200F50724 /* NSString+RGAppUtility.m */,
-			);
-			path = "Cocoa Types";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,11 +171,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B763FEAA1CB8FE8500F50724 /* NSObject+RGAppUtility.m in Sources */,
 				B763FE8B1CB8E5EF00F50724 /* ViewController.m in Sources */,
 				B763FE881CB8E5EF00F50724 /* AppDelegate.m in Sources */,
 				B763FE851CB8E5EF00F50724 /* main.m in Sources */,
-				B763FEA61CB8ED7200F50724 /* NSString+RGAppUtility.m in Sources */,
+				B79C3A471CB93CAE003DD9A5 /* NSString+RGAppUtility.m in Sources */,
+				B79C3A461CB93CAE003DD9A5 /* NSObject+RGAppUtility.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +324,7 @@
 				B763FE991CB8E5EF00F50724 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -10,7 +10,7 @@
 
 @implementation NSObject (ClearNull)
 
-- (NSString *)withoutNull {
+- (NSString *)rg_withoutNull {
     if (nil == self || [self isKindOfClass:[NSNull class]]) {
         return @"";
     } else if ([self isKindOfClass:[NSNumber class]]) {
