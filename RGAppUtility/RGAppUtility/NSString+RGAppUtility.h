@@ -15,7 +15,7 @@
  *
  *  @return 描述 Main Bundle 路径的字符串
  */
-+ (NSString *)rg_pathOfMainBundle;
++ (nonnull NSString *)rg_pathOfMainBundle;
 
 /**
  *  打印 Main Bundle 路径
@@ -30,8 +30,8 @@
  *
  *  @return 描述 Main Bundle 中的文件路径的字符串
  */
-+ (NSString *)rg_pathForResourceInMainBundle:(NSString *)name
-                                      ofType:(NSString *)ext;
++ (nullable NSString *)rg_pathForResourceInMainBundle:(nullable NSString *)name
+                                               ofType:(nullable NSString *)ext;
 
 /**
  *  打印 Main Bundle 中的文件路径
@@ -39,8 +39,8 @@
  *  @param name 文件名
  *  @param ext  文件后缀名
  */
-+ (void)rg_printPathForResourceInMainBundle:(NSString *)name
-                                     ofType:(NSString *)ext;
++ (void)rg_printPathForResourceInMainBundle:(nullable NSString *)name
+                                     ofType:(nullable NSString *)ext;
 
 /**
  *  获取 Main Bundle 中文件内的字符串
@@ -50,8 +50,8 @@
  *
  *  @return Main Bundle 中文件内的字符串
  */
-- (instancetype)rg_initWithPathForResource:(NSString *)name
-                                    ofType:(NSString *)ext;
+- (nullable instancetype)rg_initWithPathForResource:(nullable NSString *)name
+                                             ofType:(nullable NSString *)ext;
 
 /**
  *  获取 Main Bundle 中文件内的字符串
@@ -61,20 +61,20 @@
  *
  *  @return Main Bundle 中文件内的字符串
  */
-+ (NSString *)rg_stringWithPathForResource:(NSString *)name
-                                    ofType:(NSString *)ext;
++ (nullable NSString *)rg_stringWithPathForResource:(nullable NSString *)name
+                                             ofType:(nullable NSString *)ext;
 
 @end
 
 @interface NSString (Sandbox)
 
-+ (NSString *)rg_pathOfHomeDirectory;
++ (nonnull NSString *)rg_pathOfHomeDirectory;
 
-+ (NSString *)rg_pathOfDocuments;
++ (nonnull NSString *)rg_pathOfDocuments;
 
-+ (NSString *)rg_pathOfCaches;
++ (nonnull NSString *)rg_pathOfCaches;
 
-+ (NSString *)rg_pathOfTmp;
++ (nonnull NSString *)rg_pathOfTmp;
 
 + (void)rg_printPathOfHomeDirectory;
 

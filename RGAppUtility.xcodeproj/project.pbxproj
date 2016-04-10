@@ -13,6 +13,8 @@
 		B763FE8E1CB8E5EF00F50724 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B763FE8C1CB8E5EF00F50724 /* Main.storyboard */; };
 		B763FE901CB8E5EF00F50724 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B763FE8F1CB8E5EF00F50724 /* Assets.xcassets */; };
 		B763FE931CB8E5EF00F50724 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B763FE911CB8E5EF00F50724 /* LaunchScreen.storyboard */; };
+		B77213831CB9EFFD0040AD04 /* NSDictionary+RGAppUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = B77213821CB9EFFD0040AD04 /* NSDictionary+RGAppUtility.m */; };
+		B77213861CB9F2D70040AD04 /* NSUserDefaults+RGUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = B77213851CB9F2D70040AD04 /* NSUserDefaults+RGUtility.m */; };
 		B79C3A461CB93CAE003DD9A5 /* NSObject+RGAppUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = B79C3A421CB93CAE003DD9A5 /* NSObject+RGAppUtility.m */; };
 		B79C3A471CB93CAE003DD9A5 /* NSString+RGAppUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = B79C3A441CB93CAE003DD9A5 /* NSString+RGAppUtility.m */; };
 /* End PBXBuildFile section */
@@ -29,6 +31,10 @@
 		B763FE921CB8E5EF00F50724 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B763FE941CB8E5EF00F50724 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B763FEA71CB8F64F00F50724 /* RGAppUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RGAppUtility.h; sourceTree = "<group>"; };
+		B77213811CB9EFFD0040AD04 /* NSDictionary+RGAppUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+RGAppUtility.h"; sourceTree = "<group>"; };
+		B77213821CB9EFFD0040AD04 /* NSDictionary+RGAppUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+RGAppUtility.m"; sourceTree = "<group>"; };
+		B77213841CB9F2D70040AD04 /* NSUserDefaults+RGUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+RGUtility.h"; sourceTree = "<group>"; };
+		B77213851CB9F2D70040AD04 /* NSUserDefaults+RGUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+RGUtility.m"; sourceTree = "<group>"; };
 		B79C3A411CB93CAE003DD9A5 /* NSObject+RGAppUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+RGAppUtility.h"; sourceTree = "<group>"; };
 		B79C3A421CB93CAE003DD9A5 /* NSObject+RGAppUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RGAppUtility.m"; sourceTree = "<group>"; };
 		B79C3A431CB93CAE003DD9A5 /* NSString+RGAppUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RGAppUtility.h"; sourceTree = "<group>"; };
@@ -97,6 +103,10 @@
 				B79C3A421CB93CAE003DD9A5 /* NSObject+RGAppUtility.m */,
 				B79C3A431CB93CAE003DD9A5 /* NSString+RGAppUtility.h */,
 				B79C3A441CB93CAE003DD9A5 /* NSString+RGAppUtility.m */,
+				B77213811CB9EFFD0040AD04 /* NSDictionary+RGAppUtility.h */,
+				B77213821CB9EFFD0040AD04 /* NSDictionary+RGAppUtility.m */,
+				B77213841CB9F2D70040AD04 /* NSUserDefaults+RGUtility.h */,
+				B77213851CB9F2D70040AD04 /* NSUserDefaults+RGUtility.m */,
 			);
 			path = RGAppUtility;
 			sourceTree = "<group>";
@@ -173,9 +183,11 @@
 			files = (
 				B763FE8B1CB8E5EF00F50724 /* ViewController.m in Sources */,
 				B763FE881CB8E5EF00F50724 /* AppDelegate.m in Sources */,
+				B77213831CB9EFFD0040AD04 /* NSDictionary+RGAppUtility.m in Sources */,
 				B763FE851CB8E5EF00F50724 /* main.m in Sources */,
 				B79C3A471CB93CAE003DD9A5 /* NSString+RGAppUtility.m in Sources */,
 				B79C3A461CB93CAE003DD9A5 /* NSObject+RGAppUtility.m in Sources */,
+				B77213861CB9F2D70040AD04 /* NSUserDefaults+RGUtility.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

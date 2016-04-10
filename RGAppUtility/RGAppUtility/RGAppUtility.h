@@ -12,5 +12,7 @@
 #import "RGAppConstant.h"
 #import "NSObject+RGAppUtility.h"
 #import "NSString+RGAppUtility.h"
+#import "NSDictionary+RGAppUtility.h"
+#import "NSUserDefaults+RGUtility.h"
 
 #endif /* RGAppUtility_h */

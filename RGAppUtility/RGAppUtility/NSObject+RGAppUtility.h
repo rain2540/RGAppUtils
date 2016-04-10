@@ -10,6 +10,6 @@
 
 @interface NSObject (ClearNull)
 
-- (NSString *)rg_withoutNull;
+- (nonnull NSString *)rg_withoutNull;
 
 @end

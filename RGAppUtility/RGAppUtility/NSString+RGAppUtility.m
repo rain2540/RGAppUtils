@@ -11,7 +11,7 @@
 
 @implementation NSString (MainBundle)
 
-+ (NSString *)rg_pathOfMainBundle {
++ (nonnull NSString *)rg_pathOfMainBundle {
     return [[NSBundle mainBundle] description];
 }
 
@@ -19,20 +19,20 @@
     NSLog(@"Main Bundle Path: %@", [NSString rg_pathOfMainBundle]);
 }
 
-+ (NSString *)rg_pathForResourceInMainBundle:(NSString *)name
-                                      ofType:(NSString *)ext
++ (nullable NSString *)rg_pathForResourceInMainBundle:(nullable NSString *)name
+                                               ofType:(nullable NSString *)ext
 {
     return [[NSBundle mainBundle] pathForResource:name ofType:ext];
 }
 
-+ (void)rg_printPathForResourceInMainBundle:(NSString *)name
-                                     ofType:(NSString *)ext
++ (void)rg_printPathForResourceInMainBundle:(nullable NSString *)name
+                                     ofType:(nullable NSString *)ext
 {
     NSLog(@"Path for resource in main bundle: \n%@", [NSString rg_pathForResourceInMainBundle:name ofType:ext]);
 }
 
-- (instancetype)rg_initWithPathForResource:(NSString *)name
-                                    ofType:(NSString *)ext
+- (nullable instancetype)rg_initWithPathForResource:(nullable NSString *)name
+                                             ofType:(nullable NSString *)ext
 {
     NSError *error;
     NSString *path = [NSString rg_pathForResourceInMainBundle:name ofType:ext];
@@ -41,8 +41,8 @@
     return string;
 }
 
-+ (NSString *)rg_stringWithPathForResource:(NSString *)name
-                                    ofType:(NSString *)ext
++ (nullable NSString *)rg_stringWithPathForResource:(nullable NSString *)name
+                                             ofType:(nullable NSString *)ext
 {
     NSError *error;
     NSString *path = [NSString rg_pathForResourceInMainBundle:name ofType:ext];
@@ -55,19 +55,19 @@
 
 @implementation NSString (Sandbox)
 
-+ (NSString *)rg_pathOfHomeDirectory {
++ (nonnull NSString *)rg_pathOfHomeDirectory {
     return NSHomeDirectory();
 }
 
-+ (NSString *)rg_pathOfDocuments {
++ (nonnull NSString *)rg_pathOfDocuments {
     return [[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask].firstObject.path;
 }
 
-+ (NSString *)rg_pathOfCaches {
++ (nonnull NSString *)rg_pathOfCaches {
     return [[NSFileManager defaultManager] URLsForDirectory:NSCachesDirectory inDomains:NSUserDomainMask].firstObject.path;
 }
 
-+ (NSString *)rg_pathOfTmp {
++ (nonnull NSString *)rg_pathOfTmp {
     return NSTemporaryDirectory();
 }
 
