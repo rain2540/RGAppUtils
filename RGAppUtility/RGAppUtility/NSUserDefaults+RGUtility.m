@@ -30,4 +30,18 @@
     [self synchronize];
 }
 
+- (void)rg_saveBool:(BOOL)value
+             forKey:(nonnull NSString *)key
+{
+    [self setBool:value forKey:key];
+    [self synchronize];
+}
+
+- (void)rg_saveDouble:(double)value
+               forKey:(NSString *)key
+{
+    [self setDouble:value forKey:key];
+    [self synchronize];
+}
+
 @end

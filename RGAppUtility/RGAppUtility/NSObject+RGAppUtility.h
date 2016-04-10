@@ -10,6 +10,11 @@
 
 @interface NSObject (ClearNull)
 
+/**
+ *  获取去掉 nil 或 NSNull 后的字符串
+ *
+ *  @return 去掉 nil 或 NSNull 后的字符串
+ */
 - (nonnull NSString *)rg_withoutNull;
 
 @end

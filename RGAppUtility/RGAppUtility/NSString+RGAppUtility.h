@@ -68,20 +68,52 @@
 
 @interface NSString (Sandbox)
 
+/**
+ *  获取 Home Directory 的路径
+ *
+ *  @return 描述 HomeDirectory 路径的字符串
+ */
 + (nonnull NSString *)rg_pathOfHomeDirectory;
 
+/**
+ *  获取 Documents 文件夹的路径
+ *
+ *  @return 描述 Documents 文件夹路径的字符串
+ */
 + (nonnull NSString *)rg_pathOfDocuments;
 
+/**
+ *  获取 Caches 文件夹的路径
+ *
+ *  @return 描述 Caches 文件夹路径的字符串
+ */
 + (nonnull NSString *)rg_pathOfCaches;
 
+/**
+ *  获取 Tmp 文件夹的路径
+ *
+ *  @return 描述 Tmp 文件夹路径的字符串
+ */
 + (nonnull NSString *)rg_pathOfTmp;
 
+/**
+ *  打印 HomeDirectory 路径
+ */
 + (void)rg_printPathOfHomeDirectory;
 
+/**
+ *  打印 Documents 文件夹的路径
+ */
 + (void)rg_printPathOfDocuments;
 
+/**
+ *  打印 Caches 文件夹的路径
+ */
 + (void)rg_printPathOfCaches;
 
+/**
+ *  打印 Tmp 文件夹的路径
+ */
 + (void)rg_printPathOfTmp;
 
 @end
