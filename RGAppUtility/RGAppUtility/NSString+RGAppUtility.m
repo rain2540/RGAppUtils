@@ -9,6 +9,28 @@
 #import "NSString+RGAppUtility.h"
 #import <UIKit/UIKit.h>
 
+@implementation NSString (AppInfo)
+
++ (nonnull NSString *)rg_stringOfAppVersion {
+    
+    NSString * infoPath = [[NSBundle mainBundle] pathForResource:@"Info" ofType:@"plist"];
+    NSDictionary * infoDic = [NSDictionary dictionaryWithContentsOfFile:infoPath];
+    NSString * version = infoDic[@"CFBundleShortVersionString"];
+    NSString * build = infoDic[@"CFBundleVersion"];
+    
+    return [NSString stringWithFormat:@"%@ (%@)", version, build];
+}
+
++ (nonnull NSString *)rg_stringOfDeviceTime {
+    
+    NSDate * deviceTime = [NSDate date];
+    NSDateFormatter * dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"YYYY-MM-dd-HH-mm-ss"];
+    return [dateFormatter stringFromDate:deviceTime];
+}
+
+@end
+
 @implementation NSString (MainBundle)
 
 + (nonnull NSString *)rg_pathOfMainBundle {

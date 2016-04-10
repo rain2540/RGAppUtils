@@ -8,6 +8,24 @@
 
 #import <Foundation/Foundation.h>
 
+@interface NSString (AppInfo)
+
+/**
+ *  获取应用版本号
+ *
+ *  @return 描述应用版本号的字符串
+ */
++ (nonnull NSString *)rg_stringOfAppVersion;
+
+/**
+ *  获取设备时间
+ *
+ *  @return 描述设备时间的字符串
+ */
++ (nonnull NSString *)rg_stringOfDeviceTime;
+
+@end
+
 @interface NSString (MainBundle)
 
 /**

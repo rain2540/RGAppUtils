@@ -14,8 +14,8 @@
     
     NSDictionary *userDefaultDic = self.dictionaryRepresentation;
     NSArray *keys = userDefaultDic.allKeys;
-    for (NSInteger i = 0; i < keys.count; i++) {
-        NSString *aKey = keys[i];
+    for (NSString *aKey in keys) {
+
         if ([key isEqualToString:aKey]) {
             return YES;
         }
