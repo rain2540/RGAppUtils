@@ -50,7 +50,8 @@
 + (void)rg_printPathForResourceInMainBundle:(nullable NSString *)name
                                      ofType:(nullable NSString *)ext
 {
-    NSLog(@"Path for resource in main bundle: \n%@", [NSString rg_pathForResourceInMainBundle:name ofType:ext]);
+    NSLog(@"Path for resource in main bundle: \n%@",
+          [NSString rg_pathForResourceInMainBundle:name ofType:ext]);
 }
 
 - (nullable instancetype)rg_initWithPathForResource:(nullable NSString *)name
@@ -58,7 +59,9 @@
 {
     NSError *error;
     NSString *path = [NSString rg_pathForResourceInMainBundle:name ofType:ext];
-    NSString *string = [self initWithContentsOfFile:path encoding:NSUTF8StringEncoding error:&error];
+    NSString *string = [self initWithContentsOfFile:path
+                                           encoding:NSUTF8StringEncoding
+                                              error:&error];
     NSLog(@"Error in rg_initWithPathForResource: ofType: \n%@", error);
     return string;
 }
@@ -68,7 +71,9 @@
 {
     NSError *error;
     NSString *path = [NSString rg_pathForResourceInMainBundle:name ofType:ext];
-    NSString *string = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:&error];
+    NSString *string = [NSString stringWithContentsOfFile:path
+                                                 encoding:NSUTF8StringEncoding
+                                                    error:&error];
     NSLog(@"Error in rg_stringWithPathForResource: ofType: \n%@", error);
     return string;
 }
@@ -82,11 +87,13 @@
 }
 
 + (nonnull NSString *)rg_pathOfDocuments {
-    return [[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask].firstObject.path;
+    return [[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory
+                                                  inDomains:NSUserDomainMask].firstObject.path;
 }
 
 + (nonnull NSString *)rg_pathOfCaches {
-    return [[NSFileManager defaultManager] URLsForDirectory:NSCachesDirectory inDomains:NSUserDomainMask].firstObject.path;
+    return [[NSFileManager defaultManager] URLsForDirectory:NSCachesDirectory
+                                                  inDomains:NSUserDomainMask].firstObject.path;
 }
 
 + (nonnull NSString *)rg_pathOfTmp {
