@@ -13,6 +13,7 @@
 #import "NSObject+RGAppUtility.h"
 #import "NSString+RGAppUtility.h"
 #import "NSDictionary+RGAppUtility.h"
-#import "NSUserDefaults+RGUtility.h"
+#import "NSUserDefaults+RGAppUtility.h"
+#import "UIDevice+RGAppUtility.h"
 
 #endif /* RGAppUtility_h */

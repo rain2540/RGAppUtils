@@ -1,5 +1,5 @@
 //
-//  NSUserDefaults+RGUtility.h
+//  NSUserDefaults+RGAppUtility.h
 //  RGAppUtility
 //
 //  Created by RAIN on 16/4/10.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSUserDefaults (RGUtility)
+@interface NSUserDefaults (RGAppUtility)
 
 /**
  *  检验 UserDefaults 中是否存在某个 key

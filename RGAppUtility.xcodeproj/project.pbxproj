@@ -14,7 +14,8 @@
 		B763FE901CB8E5EF00F50724 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B763FE8F1CB8E5EF00F50724 /* Assets.xcassets */; };
 		B763FE931CB8E5EF00F50724 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B763FE911CB8E5EF00F50724 /* LaunchScreen.storyboard */; };
 		B77213831CB9EFFD0040AD04 /* NSDictionary+RGAppUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = B77213821CB9EFFD0040AD04 /* NSDictionary+RGAppUtility.m */; };
-		B77213861CB9F2D70040AD04 /* NSUserDefaults+RGUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = B77213851CB9F2D70040AD04 /* NSUserDefaults+RGUtility.m */; };
+		B77213861CB9F2D70040AD04 /* NSUserDefaults+RGAppUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = B77213851CB9F2D70040AD04 /* NSUserDefaults+RGAppUtility.m */; };
+		B77213891CBA01BE0040AD04 /* UIDevice+RGAppUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = B77213881CBA01BE0040AD04 /* UIDevice+RGAppUtility.m */; };
 		B79C3A461CB93CAE003DD9A5 /* NSObject+RGAppUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = B79C3A421CB93CAE003DD9A5 /* NSObject+RGAppUtility.m */; };
 		B79C3A471CB93CAE003DD9A5 /* NSString+RGAppUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = B79C3A441CB93CAE003DD9A5 /* NSString+RGAppUtility.m */; };
 /* End PBXBuildFile section */
@@ -33,8 +34,10 @@
 		B763FEA71CB8F64F00F50724 /* RGAppUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RGAppUtility.h; sourceTree = "<group>"; };
 		B77213811CB9EFFD0040AD04 /* NSDictionary+RGAppUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+RGAppUtility.h"; sourceTree = "<group>"; };
 		B77213821CB9EFFD0040AD04 /* NSDictionary+RGAppUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+RGAppUtility.m"; sourceTree = "<group>"; };
-		B77213841CB9F2D70040AD04 /* NSUserDefaults+RGUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+RGUtility.h"; sourceTree = "<group>"; };
-		B77213851CB9F2D70040AD04 /* NSUserDefaults+RGUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+RGUtility.m"; sourceTree = "<group>"; };
+		B77213841CB9F2D70040AD04 /* NSUserDefaults+RGAppUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+RGAppUtility.h"; sourceTree = "<group>"; };
+		B77213851CB9F2D70040AD04 /* NSUserDefaults+RGAppUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+RGAppUtility.m"; sourceTree = "<group>"; };
+		B77213871CBA01BE0040AD04 /* UIDevice+RGAppUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+RGAppUtility.h"; sourceTree = "<group>"; };
+		B77213881CBA01BE0040AD04 /* UIDevice+RGAppUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+RGAppUtility.m"; sourceTree = "<group>"; };
 		B79C3A411CB93CAE003DD9A5 /* NSObject+RGAppUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+RGAppUtility.h"; sourceTree = "<group>"; };
 		B79C3A421CB93CAE003DD9A5 /* NSObject+RGAppUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RGAppUtility.m"; sourceTree = "<group>"; };
 		B79C3A431CB93CAE003DD9A5 /* NSString+RGAppUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RGAppUtility.h"; sourceTree = "<group>"; };
@@ -105,8 +108,10 @@
 				B79C3A441CB93CAE003DD9A5 /* NSString+RGAppUtility.m */,
 				B77213811CB9EFFD0040AD04 /* NSDictionary+RGAppUtility.h */,
 				B77213821CB9EFFD0040AD04 /* NSDictionary+RGAppUtility.m */,
-				B77213841CB9F2D70040AD04 /* NSUserDefaults+RGUtility.h */,
-				B77213851CB9F2D70040AD04 /* NSUserDefaults+RGUtility.m */,
+				B77213841CB9F2D70040AD04 /* NSUserDefaults+RGAppUtility.h */,
+				B77213851CB9F2D70040AD04 /* NSUserDefaults+RGAppUtility.m */,
+				B77213871CBA01BE0040AD04 /* UIDevice+RGAppUtility.h */,
+				B77213881CBA01BE0040AD04 /* UIDevice+RGAppUtility.m */,
 			);
 			path = RGAppUtility;
 			sourceTree = "<group>";
@@ -142,6 +147,7 @@
 				TargetAttributes = {
 					B763FE7F1CB8E5EF00F50724 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 76U7MFBQ83;
 					};
 				};
 			};
@@ -182,12 +188,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B763FE8B1CB8E5EF00F50724 /* ViewController.m in Sources */,
+				B77213891CBA01BE0040AD04 /* UIDevice+RGAppUtility.m in Sources */,
 				B763FE881CB8E5EF00F50724 /* AppDelegate.m in Sources */,
 				B77213831CB9EFFD0040AD04 /* NSDictionary+RGAppUtility.m in Sources */,
 				B763FE851CB8E5EF00F50724 /* main.m in Sources */,
 				B79C3A471CB93CAE003DD9A5 /* NSString+RGAppUtility.m in Sources */,
 				B79C3A461CB93CAE003DD9A5 /* NSObject+RGAppUtility.m in Sources */,
-				B77213861CB9F2D70040AD04 /* NSUserDefaults+RGUtility.m in Sources */,
+				B77213861CB9F2D70040AD04 /* NSUserDefaults+RGAppUtility.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +306,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = RGAppUtility/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.smartech.RGAppUtility;
@@ -310,6 +318,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = RGAppUtility/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.smartech.RGAppUtility;

@@ -1,14 +1,14 @@
 //
-//  NSUserDefaults+RGUtility.m
+//  NSUserDefaults+RGAppUtility.m
 //  RGAppUtility
 //
 //  Created by RAIN on 16/4/10.
 //  Copyright © 2016年 Smartech. All rights reserved.
 //
 
-#import "NSUserDefaults+RGUtility.h"
+#import "NSUserDefaults+RGAppUtility.h"
 
-@implementation NSUserDefaults (RGUtility)
+@implementation NSUserDefaults (RGAppUtility)
 
 - (BOOL)rg_isHaveKey:(nonnull NSString *)key {
     
