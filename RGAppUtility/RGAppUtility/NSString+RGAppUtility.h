@@ -135,3 +135,9 @@
 + (void)rg_printPathOfTmp;
 
 @end
+
+@interface NSString (Trans)
+
+- (nullable id)rg_toObject;
+
+@end

@@ -117,3 +117,18 @@
 }
 
 @end
+
+@implementation NSString (Trans)
+
+- (id)rg_toObject {
+    NSString *string = [self stringByReplacingOccurrencesOfString:@"\0" withString:@""];
+    NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
+    NSError *error;
+    id obj = [NSJSONSerialization JSONObjectWithData:data
+                                             options:NSJSONReadingMutableContainers
+                                               error:&error];
+    NSLog(@"RGAppUtility NSString to object Error:\n%@", error);
+    return obj;
+}
+
+@end
