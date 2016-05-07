@@ -18,3 +18,10 @@
 - (nonnull NSString *)rg_withoutNull;
 
 @end
+/*
+@interface NSObject (Trans)
+
++ (nullable NSString *)rg_objectToJSONString;
+
+@end
+*/

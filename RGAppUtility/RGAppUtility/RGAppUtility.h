@@ -14,6 +14,7 @@
 #import "NSString+RGAppUtility.h"
 #import "NSDictionary+RGAppUtility.h"
 #import "NSUserDefaults+RGAppUtility.h"
+#import "NSDate+RGAppUtility.h"
 #import "UIDevice+RGAppUtility.h"
 
 #endif /* RGAppUtility_h */

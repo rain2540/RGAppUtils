@@ -21,3 +21,18 @@
 }
 
 @end
+/*
+@implementation NSObject (Trans)
+
++ (NSString *)rg_objectToJSONString {
+    NSError *error;
+    NSData *data = [NSJSONSerialization dataWithJSONObject:self
+                                                   options:NSJSONWritingPrettyPrinted
+                                                     error:&error];
+    NSLog(@"RGAppUtility NSObject to JSON string Error:\n%@", error);
+    
+    return [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+}
+
+@end
+*/

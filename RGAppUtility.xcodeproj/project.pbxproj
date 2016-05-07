@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B737CDA61CDB337D006C6010 /* NSDate+RGAppUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = B737CDA51CDB337D006C6010 /* NSDate+RGAppUtility.m */; };
 		B763FE851CB8E5EF00F50724 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B763FE841CB8E5EF00F50724 /* main.m */; };
 		B763FE881CB8E5EF00F50724 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B763FE871CB8E5EF00F50724 /* AppDelegate.m */; };
 		B763FE8B1CB8E5EF00F50724 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B763FE8A1CB8E5EF00F50724 /* ViewController.m */; };
@@ -21,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B737CDA41CDB337D006C6010 /* NSDate+RGAppUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+RGAppUtility.h"; sourceTree = "<group>"; };
+		B737CDA51CDB337D006C6010 /* NSDate+RGAppUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+RGAppUtility.m"; sourceTree = "<group>"; };
 		B763FE801CB8E5EF00F50724 /* RGAppUtility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RGAppUtility.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B763FE841CB8E5EF00F50724 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B763FE861CB8E5EF00F50724 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -106,6 +109,8 @@
 				B79C3A421CB93CAE003DD9A5 /* NSObject+RGAppUtility.m */,
 				B79C3A431CB93CAE003DD9A5 /* NSString+RGAppUtility.h */,
 				B79C3A441CB93CAE003DD9A5 /* NSString+RGAppUtility.m */,
+				B737CDA41CDB337D006C6010 /* NSDate+RGAppUtility.h */,
+				B737CDA51CDB337D006C6010 /* NSDate+RGAppUtility.m */,
 				B77213811CB9EFFD0040AD04 /* NSDictionary+RGAppUtility.h */,
 				B77213821CB9EFFD0040AD04 /* NSDictionary+RGAppUtility.m */,
 				B77213841CB9F2D70040AD04 /* NSUserDefaults+RGAppUtility.h */,
@@ -189,6 +194,7 @@
 			files = (
 				B763FE8B1CB8E5EF00F50724 /* ViewController.m in Sources */,
 				B77213891CBA01BE0040AD04 /* UIDevice+RGAppUtility.m in Sources */,
+				B737CDA61CDB337D006C6010 /* NSDate+RGAppUtility.m in Sources */,
 				B763FE881CB8E5EF00F50724 /* AppDelegate.m in Sources */,
 				B77213831CB9EFFD0040AD04 /* NSDictionary+RGAppUtility.m in Sources */,
 				B763FE851CB8E5EF00F50724 /* main.m in Sources */,
