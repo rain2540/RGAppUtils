@@ -21,6 +21,12 @@
     return [NSString stringWithFormat:@"%@ (%@)", version, build];
 }
 
++ (nonnull NSString *)rg_stringOfBundleIdentifier {
+    NSString *infoPath = [NSString rg_pathForResourceInMainBundle:@"Info" ofType:@"plist"];
+    NSDictionary *infoDic = [NSDictionary dictionaryWithContentsOfFile:infoPath];
+    return infoDic[@"CFBundleIdentifier"];
+}
+
 + (nonnull NSString *)rg_stringOfDeviceTime {
     
     NSDate * deviceTime = [NSDate date];

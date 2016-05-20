@@ -17,6 +17,8 @@
  */
 + (nonnull NSString *)rg_stringOfAppVersion;
 
++ (nonnull NSString *)rg_stringOfBundleIdentifier;
+
 /**
  *  获取设备时间
  *
