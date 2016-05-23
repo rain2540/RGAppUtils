@@ -17,6 +17,11 @@
  */
 + (nonnull NSString *)rg_stringOfAppVersion;
 
+/**
+ *  获取应用 Bundle 标识
+ *
+ *  @return 描述 Bundle 标识的字符串
+ */
 + (nonnull NSString *)rg_stringOfBundleIdentifier;
 
 /**
