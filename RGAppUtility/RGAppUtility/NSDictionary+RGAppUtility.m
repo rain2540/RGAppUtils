@@ -25,3 +25,18 @@
 }
 
 @end
+
+@implementation NSDictionary (KeyExist)
+
+- (BOOL)rg_isHaveKey:(nonnull NSString *)key {
+    NSArray *keys = self.allKeys;
+    for (NSString *aKey in keys) {
+        
+        if ([key isEqualToString:aKey]) {
+            return YES;
+        }
+    }
+    return NO;
+}
+
+@end
