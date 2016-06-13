@@ -33,3 +33,9 @@
                                                                ofType:(nullable NSString *)ext;
 
 @end
+
+@interface NSDictionary (KeyExist)
+
+- (BOOL)rg_isHaveKey:(nonnull NSString *)key;
+
+@end
