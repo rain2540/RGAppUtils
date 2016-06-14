@@ -36,6 +36,13 @@
 
 @interface NSDictionary (KeyExist)
 
+/**
+ *  检验字典中是否存在某个 key
+ *
+ *  @param key 待检验的 key
+ *
+ *  @return 检验结果的布尔值
+ */
 - (BOOL)rg_isHaveKey:(nonnull NSString *)key;
 
 @end
