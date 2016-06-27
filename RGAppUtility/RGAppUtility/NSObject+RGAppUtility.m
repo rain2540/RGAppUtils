@@ -21,7 +21,7 @@
 }
 
 @end
-/*
+
 @implementation NSObject (Trans)
 
 + (NSString *)rg_objectToJSONString {
@@ -35,4 +35,3 @@
 }
 
 @end
-*/
