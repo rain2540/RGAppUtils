@@ -126,7 +126,7 @@
 
 @implementation NSString (Trans)
 
-- (id)rg_toObject {
+- (id)rg_toJSONObject {
     NSString *string = [self stringByReplacingOccurrencesOfString:@"\0" withString:@""];
     NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
     NSError *error;
