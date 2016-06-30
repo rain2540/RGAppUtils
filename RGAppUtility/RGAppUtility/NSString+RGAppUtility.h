@@ -145,6 +145,6 @@
 
 @interface NSString (Trans)
 
-- (nullable id)rg_toObject;
+- (nullable id)rg_toJSONObject;
 
 @end
