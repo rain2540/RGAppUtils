@@ -21,6 +21,11 @@
 
 @interface NSObject (Trans)
 
+/**
+ *  将对象转化为 JSON String
+ *
+ *  @return 转化得到的 JSON String
+ */
 + (nullable NSString *)rg_objectToJSONString;
 
 @end
