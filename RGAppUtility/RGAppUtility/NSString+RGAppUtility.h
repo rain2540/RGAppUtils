@@ -145,6 +145,11 @@
 
 @interface NSString (Trans)
 
+/**
+ *  字符串转化为 JSON 对象
+ *
+ *  @return 转化得到的 JSON 对象
+ */
 - (nullable id)rg_toJSONObject;
 
 @end
