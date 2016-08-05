@@ -10,11 +10,17 @@
 
 @interface NSDate (RGAppUtility)
 
+- (NSTimeInterval)rg_toTimestamp;
+
 /**
  *  转为时间戳
  *
  *  @return 表示时间戳的字符串
  */
-- (NSString *)rg_toTimestamp;
+//- (NSString *)rg_stringOfTimestamp;
+//
+//+ (NSTimeInterval)rg_timestampForNow;
+//
+//+ (NSString *)rg_stringOfTimestampForNow;
 
 @end
