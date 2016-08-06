@@ -10,8 +10,20 @@
 
 @implementation NSDate (RGAppUtility)
 
-- (NSString *)rg_toTimestamp {
-    return [NSString stringWithFormat:@"%@", @([self timeIntervalSince1970])];
+- (NSTimeInterval)rg_toTimestamp {
+    return self.timeIntervalSince1970;
 }
+
+//- (NSString *)rg_stringOfTimestamp {
+//    return [NSString stringWithFormat:@"%@", @([self rg_toTimestamp])];
+//}
+
+//+ (NSTimeInterval)rg_timestampForNow {
+//    return [NSDate date].timeIntervalSince1970;
+//}
+//
+//+ (NSString *)rg_stringOfTimestampForNow {
+//    return [NSString stringWithFormat:@"%@", @([[self class] rg_timestampForNow])];
+//}
 
 @end
