@@ -12,7 +12,7 @@
 
 - (NSTimeInterval)rg_toTimestamp;
 
-//- (NSString *)rg_stringOfTimestamp;
+- (NSString *)rg_stringOfTimestamp;
 
 //+ (NSTimeInterval)rg_timestampForNow;
 
