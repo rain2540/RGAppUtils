@@ -14,9 +14,9 @@
     return self.timeIntervalSince1970;
 }
 
-//- (NSString *)rg_stringOfTimestamp {
-//    return [NSString stringWithFormat:@"%@", @([self rg_toTimestamp])];
-//}
+- (NSString *)rg_stringOfTimestamp {
+    return [NSString stringWithFormat:@"%@", @([self rg_toTimestamp])];
+}
 
 //+ (NSTimeInterval)rg_timestampForNow {
 //    return [NSDate date].timeIntervalSince1970;
