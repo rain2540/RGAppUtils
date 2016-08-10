@@ -14,7 +14,7 @@
 
 - (NSString *)rg_stringOfTimestamp;
 
-//+ (NSTimeInterval)rg_timestampForNow;
++ (NSTimeInterval)rg_timestampForNow;
 
 //+ (NSString *)rg_stringOfTimestampForNow;
 
