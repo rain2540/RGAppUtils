@@ -16,6 +16,6 @@
 
 + (NSTimeInterval)rg_timestampForNow;
 
-//+ (NSString *)rg_stringOfTimestampForNow;
++ (NSString *)rg_stringOfTimestampForNow;
 
 @end
