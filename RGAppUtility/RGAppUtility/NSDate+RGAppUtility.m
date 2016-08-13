@@ -22,8 +22,8 @@
     return [NSDate date].timeIntervalSince1970;
 }
 
-//+ (NSString *)rg_stringOfTimestampForNow {
-//    return [NSString stringWithFormat:@"%@", @([[self class] rg_timestampForNow])];
-//}
++ (NSString *)rg_stringOfTimestampForNow {
+    return [NSString stringWithFormat:@"%@", @([[self class] rg_timestampForNow])];
+}
 
 @end
