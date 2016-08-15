@@ -17,6 +17,11 @@
  */
 - (NSTimeInterval)rg_toTimestamp;
 
+/**
+ *  返回描述某个时间对应的时间戳的字符串
+ *
+ *  @return 描述某个时间对应的时间戳的字符串
+ */
 - (NSString *)rg_stringOfTimestamp;
 
 + (NSTimeInterval)rg_timestampForNow;
