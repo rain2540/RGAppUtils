@@ -11,9 +11,9 @@
 @interface NSDate (RGAppUtility)
 
 /**
- *  返回某个时间的时间戳
+ *  返回某个时间对应的时间戳
  *
- *  @return 某个时间的时间戳
+ *  @return 某个时间对应的时间戳
  */
 - (NSTimeInterval)rg_toTimestamp;
 
