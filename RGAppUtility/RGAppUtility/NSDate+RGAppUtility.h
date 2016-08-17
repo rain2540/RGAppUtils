@@ -24,6 +24,11 @@
  */
 - (NSString *)rg_stringOfTimestamp;
 
+/**
+ *  返回实时对应的时间戳
+ *
+ *  @return 实时对应的时间戳
+ */
 + (NSTimeInterval)rg_timestampForNow;
 
 + (NSString *)rg_stringOfTimestampForNow;
