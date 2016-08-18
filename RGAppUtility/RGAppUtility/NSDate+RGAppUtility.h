@@ -31,6 +31,11 @@
  */
 + (NSTimeInterval)rg_timestampForNow;
 
+/**
+ *  返回描述实时对应的时间戳的字符串
+ *
+ *  @return 描述实时对应的时间戳的字符串
+ */
 + (NSString *)rg_stringOfTimestampForNow;
 
 @end
