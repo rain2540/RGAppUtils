@@ -1,13 +1,12 @@
 //
 //  ViewController.m
-//  RGAppUtility
+//  RGAppUtils
 //
-//  Created by RAIN on 16/4/9.
-//  Copyright © 2016年 Smartech. All rights reserved.
+//  Created by RAIN on 2017/8/16.
+//  Copyright © 2017年 Smartech. All rights reserved.
 //
 
 #import "ViewController.h"
-#import "RGAppUtility/RGAppUtility.h"
 
 @interface ViewController ()
 
@@ -17,11 +16,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    // Do any additional setup after loading the view, typically from a nib.
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 @end

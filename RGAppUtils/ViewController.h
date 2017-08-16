@@ -1,9 +1,9 @@
 //
 //  ViewController.h
-//  RGAppUtility
+//  RGAppUtils
 //
-//  Created by RAIN on 16/4/9.
-//  Copyright © 2016年 Smartech. All rights reserved.
+//  Created by RAIN on 2017/8/16.
+//  Copyright © 2017年 Smartech. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
