@@ -9,5 +9,6 @@
 #ifndef RGAppUtils_h
 #define RGAppUtils_h
 
+#import "RGAppConstant.h"
 
 #endif /* RGAppUtils_h */
