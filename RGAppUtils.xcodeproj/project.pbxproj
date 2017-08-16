@@ -16,6 +16,7 @@
 		B73D43551F43D12B0048A97D /* NSDate+RGAppUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D43541F43D12B0048A97D /* NSDate+RGAppUtils.m */; };
 		B73D43591F43D16F0048A97D /* RGDispatchQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D43581F43D16F0048A97D /* RGDispatchQueue.m */; };
 		B73D435D1F43D1F70048A97D /* UIAlertController+RGAppUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D435C1F43D1F70048A97D /* UIAlertController+RGAppUtils.m */; };
+		B73D43601F43D3A90048A97D /* RGMainScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D435F1F43D3A90048A97D /* RGMainScreen.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		B73D43581F43D16F0048A97D /* RGDispatchQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGDispatchQueue.m; sourceTree = "<group>"; };
 		B73D435B1F43D1F70048A97D /* UIAlertController+RGAppUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+RGAppUtils.h"; sourceTree = "<group>"; };
 		B73D435C1F43D1F70048A97D /* UIAlertController+RGAppUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+RGAppUtils.m"; sourceTree = "<group>"; };
+		B73D435E1F43D3A90048A97D /* RGMainScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGMainScreen.h; sourceTree = "<group>"; };
+		B73D435F1F43D3A90048A97D /* RGMainScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGMainScreen.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +155,8 @@
 		B73D435A1F43D1CD0048A97D /* RGMainScreen */ = {
 			isa = PBXGroup;
 			children = (
+				B73D435E1F43D3A90048A97D /* RGMainScreen.h */,
+				B73D435F1F43D3A90048A97D /* RGMainScreen.m */,
 			);
 			path = RGMainScreen;
 			sourceTree = "<group>";
@@ -229,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B73D433B1F43CF410048A97D /* ViewController.m in Sources */,
+				B73D43601F43D3A90048A97D /* RGMainScreen.m in Sources */,
 				B73D435D1F43D1F70048A97D /* UIAlertController+RGAppUtils.m in Sources */,
 				B73D43381F43CF410048A97D /* AppDelegate.m in Sources */,
 				B73D43351F43CF410048A97D /* main.m in Sources */,
