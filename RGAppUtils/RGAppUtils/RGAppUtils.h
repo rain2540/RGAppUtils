@@ -14,8 +14,21 @@
 #import "RGDispatchQueue.h"
 #import "RGMainScreen.h"
 
+#import "CLLocation+RGAppUtils.h"
+#import "NSBundle+RGAppUtils.h"
 #import "NSDate+RGAppUtils.h"
+#import "NSDictionary+RGAppUtils.h"
+#import "NSFileManager+RGAppUtils.h"
+#import "NSObject+RGAppUtils.h"
+#import "NSUserDefaults+RGAppUtils.h"
 
 #import "UIAlertController+RGAppUtils.h"
+#import "UIColor+RGAppUtils.h"
+#import "UIDevice+RGAppUtils.h"
+#import "UIImage+RGAppUtils.h"
+#import "UINavigationBar+RGAppUtils.h"
+#import "UITabBar+RGAppUtils.h"
+#import "UIView+RGAppUtils.h"
+#import "UIViewController+RGAppUtils.h"
 
 #endif /* RGAppUtils_h */
