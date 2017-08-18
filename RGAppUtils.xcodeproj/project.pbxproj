@@ -18,6 +18,7 @@
 		B73D435D1F43D1F70048A97D /* UIAlertController+RGAppUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D435C1F43D1F70048A97D /* UIAlertController+RGAppUtils.m */; };
 		B73D43601F43D3A90048A97D /* RGMainScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D435F1F43D3A90048A97D /* RGMainScreen.m */; };
 		B784E63B1F468E7800D702AF /* CLLocation+RGAppUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B784E63A1F468E7800D702AF /* CLLocation+RGAppUtils.m */; };
+		B784E63E1F4695EE00D702AF /* NSDictionary+RGAppUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B784E63D1F4695EE00D702AF /* NSDictionary+RGAppUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,8 @@
 		B73D435F1F43D3A90048A97D /* RGMainScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGMainScreen.m; sourceTree = "<group>"; };
 		B784E6391F468E7800D702AF /* CLLocation+RGAppUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocation+RGAppUtils.h"; sourceTree = "<group>"; };
 		B784E63A1F468E7800D702AF /* CLLocation+RGAppUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocation+RGAppUtils.m"; sourceTree = "<group>"; };
+		B784E63C1F4695EE00D702AF /* NSDictionary+RGAppUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+RGAppUtils.h"; sourceTree = "<group>"; };
+		B784E63D1F4695EE00D702AF /* NSDictionary+RGAppUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+RGAppUtils.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +129,8 @@
 				B784E63A1F468E7800D702AF /* CLLocation+RGAppUtils.m */,
 				B73D43531F43D12B0048A97D /* NSDate+RGAppUtils.h */,
 				B73D43541F43D12B0048A97D /* NSDate+RGAppUtils.m */,
+				B784E63C1F4695EE00D702AF /* NSDictionary+RGAppUtils.h */,
+				B784E63D1F4695EE00D702AF /* NSDictionary+RGAppUtils.m */,
 			);
 			path = "Cocoa Types";
 			sourceTree = "<group>";
@@ -245,6 +250,7 @@
 				B73D43381F43CF410048A97D /* AppDelegate.m in Sources */,
 				B73D43351F43CF410048A97D /* main.m in Sources */,
 				B73D43551F43D12B0048A97D /* NSDate+RGAppUtils.m in Sources */,
+				B784E63E1F4695EE00D702AF /* NSDictionary+RGAppUtils.m in Sources */,
 				B73D43591F43D16F0048A97D /* RGDispatchQueue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
