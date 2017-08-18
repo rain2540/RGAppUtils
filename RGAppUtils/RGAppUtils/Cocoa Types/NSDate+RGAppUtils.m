@@ -8,6 +8,26 @@
 
 #import "NSDate+RGAppUtils.h"
 
+@implementation NSDate (Timestamp)
+
+- (NSTimeInterval)rg_timestamp {
+    return self.timeIntervalSince1970;
+}
+
+- (NSString *)rg_stringOfTimestamp {
+    return [NSString stringWithFormat:@"%@", @([self rg_timestamp])];
+}
+
++ (NSTimeInterval)rg_timestampForNow {
+    return [NSDate date].timeIntervalSince1970;
+}
+
++ (NSString *)rg_stringOfTimestampForNow {
+    return [NSString stringWithFormat:@"%@", @([NSDate rg_timestampForNow])];
+}
+
+@end
+
 @implementation NSDate (Elements)
 
 - (NSInteger)rg_year {

@@ -8,6 +8,38 @@
 
 #import <Foundation/Foundation.h>
 
+@interface NSDate (Timestamp)
+
+/**
+ 某个时间对应的时间戳
+
+ @return 时间戳
+ */
+- (NSTimeInterval)rg_timestamp;
+
+/**
+ *  描述某个时间对应的时间戳的字符串
+ *
+ *  @return 表示时间戳的字符串
+ */
+- (NSString *)rg_stringOfTimestamp;
+
+/**
+ 当前时间对应的时间戳
+
+ @return 当前时间的时间戳
+ */
++ (NSTimeInterval)rg_timestampForNow;
+
+/**
+ 返回描述实时对应的时间戳的字符串
+
+ @return 描述实时对应的时间戳的字符串
+ */
++ (NSString *)rg_stringOfTimestampForNow;
+
+@end
+
 @interface NSDate (Elements)
 
 /**
