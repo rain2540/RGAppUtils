@@ -17,6 +17,7 @@
 		B73D43591F43D16F0048A97D /* RGDispatchQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D43581F43D16F0048A97D /* RGDispatchQueue.m */; };
 		B73D435D1F43D1F70048A97D /* UIAlertController+RGAppUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D435C1F43D1F70048A97D /* UIAlertController+RGAppUtils.m */; };
 		B73D43601F43D3A90048A97D /* RGMainScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D435F1F43D3A90048A97D /* RGMainScreen.m */; };
+		B784E63B1F468E7800D702AF /* CLLocation+RGAppUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B784E63A1F468E7800D702AF /* CLLocation+RGAppUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,8 @@
 		B73D435C1F43D1F70048A97D /* UIAlertController+RGAppUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+RGAppUtils.m"; sourceTree = "<group>"; };
 		B73D435E1F43D3A90048A97D /* RGMainScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGMainScreen.h; sourceTree = "<group>"; };
 		B73D435F1F43D3A90048A97D /* RGMainScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGMainScreen.m; sourceTree = "<group>"; };
+		B784E6391F468E7800D702AF /* CLLocation+RGAppUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocation+RGAppUtils.h"; sourceTree = "<group>"; };
+		B784E63A1F468E7800D702AF /* CLLocation+RGAppUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocation+RGAppUtils.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 		B73D434D1F43D08E0048A97D /* Cocoa Types */ = {
 			isa = PBXGroup;
 			children = (
+				B784E6391F468E7800D702AF /* CLLocation+RGAppUtils.h */,
+				B784E63A1F468E7800D702AF /* CLLocation+RGAppUtils.m */,
 				B73D43531F43D12B0048A97D /* NSDate+RGAppUtils.h */,
 				B73D43541F43D12B0048A97D /* NSDate+RGAppUtils.m */,
 			);
@@ -233,6 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B784E63B1F468E7800D702AF /* CLLocation+RGAppUtils.m in Sources */,
 				B73D433B1F43CF410048A97D /* ViewController.m in Sources */,
 				B73D43601F43D3A90048A97D /* RGMainScreen.m in Sources */,
 				B73D435D1F43D1F70048A97D /* UIAlertController+RGAppUtils.m in Sources */,
