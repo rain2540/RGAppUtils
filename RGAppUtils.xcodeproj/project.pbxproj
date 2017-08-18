@@ -13,13 +13,13 @@
 		B73D433E1F43CF410048A97D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B73D433C1F43CF410048A97D /* Main.storyboard */; };
 		B73D43401F43CF410048A97D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B73D433F1F43CF410048A97D /* Assets.xcassets */; };
 		B73D43431F43CF410048A97D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B73D43411F43CF410048A97D /* LaunchScreen.storyboard */; };
-		B73D43551F43D12B0048A97D /* NSDate+RGAppUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D43541F43D12B0048A97D /* NSDate+RGAppUtils.m */; };
 		B73D43591F43D16F0048A97D /* RGDispatchQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D43581F43D16F0048A97D /* RGDispatchQueue.m */; };
-		B73D435D1F43D1F70048A97D /* UIAlertController+RGAppUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D435C1F43D1F70048A97D /* UIAlertController+RGAppUtils.m */; };
 		B73D43601F43D3A90048A97D /* RGMainScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D435F1F43D3A90048A97D /* RGMainScreen.m */; };
-		B784E63B1F468E7800D702AF /* CLLocation+RGAppUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B784E63A1F468E7800D702AF /* CLLocation+RGAppUtils.m */; };
-		B784E63E1F4695EE00D702AF /* NSDictionary+RGAppUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B784E63D1F4695EE00D702AF /* NSDictionary+RGAppUtils.m */; };
-		B784E6411F46B77200D702AF /* NSBundle+RGAppUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B784E6401F46B77200D702AF /* NSBundle+RGAppUtils.m */; };
+		B784E64F1F46C20300D702AF /* CLLocation+RGAppUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B784E6451F46C20300D702AF /* CLLocation+RGAppUtils.m */; };
+		B784E6501F46C20300D702AF /* NSBundle+RGAppUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B784E6471F46C20300D702AF /* NSBundle+RGAppUtils.m */; };
+		B784E6511F46C20300D702AF /* NSDate+RGAppUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B784E6491F46C20300D702AF /* NSDate+RGAppUtils.m */; };
+		B784E6521F46C20300D702AF /* NSDictionary+RGAppUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B784E64B1F46C20300D702AF /* NSDictionary+RGAppUtils.m */; };
+		B784E6531F46C20300D702AF /* UIAlertController+RGAppUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B784E64E1F46C20300D702AF /* UIAlertController+RGAppUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,20 +36,20 @@
 		B73D43501F43D0C00048A97D /* RGAppUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RGAppUtils.h; sourceTree = "<group>"; };
 		B73D43511F43D0EE0048A97D /* RGAppConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RGAppConstant.h; sourceTree = "<group>"; };
 		B73D43521F43D0FF0048A97D /* RGUIConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RGUIConstant.h; sourceTree = "<group>"; };
-		B73D43531F43D12B0048A97D /* NSDate+RGAppUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+RGAppUtils.h"; sourceTree = "<group>"; };
-		B73D43541F43D12B0048A97D /* NSDate+RGAppUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+RGAppUtils.m"; sourceTree = "<group>"; };
 		B73D43571F43D16F0048A97D /* RGDispatchQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGDispatchQueue.h; sourceTree = "<group>"; };
 		B73D43581F43D16F0048A97D /* RGDispatchQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGDispatchQueue.m; sourceTree = "<group>"; };
-		B73D435B1F43D1F70048A97D /* UIAlertController+RGAppUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+RGAppUtils.h"; sourceTree = "<group>"; };
-		B73D435C1F43D1F70048A97D /* UIAlertController+RGAppUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+RGAppUtils.m"; sourceTree = "<group>"; };
 		B73D435E1F43D3A90048A97D /* RGMainScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGMainScreen.h; sourceTree = "<group>"; };
 		B73D435F1F43D3A90048A97D /* RGMainScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGMainScreen.m; sourceTree = "<group>"; };
-		B784E6391F468E7800D702AF /* CLLocation+RGAppUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocation+RGAppUtils.h"; sourceTree = "<group>"; };
-		B784E63A1F468E7800D702AF /* CLLocation+RGAppUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocation+RGAppUtils.m"; sourceTree = "<group>"; };
-		B784E63C1F4695EE00D702AF /* NSDictionary+RGAppUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+RGAppUtils.h"; sourceTree = "<group>"; };
-		B784E63D1F4695EE00D702AF /* NSDictionary+RGAppUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+RGAppUtils.m"; sourceTree = "<group>"; };
-		B784E63F1F46B77200D702AF /* NSBundle+RGAppUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+RGAppUtils.h"; sourceTree = "<group>"; };
-		B784E6401F46B77200D702AF /* NSBundle+RGAppUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+RGAppUtils.m"; sourceTree = "<group>"; };
+		B784E6441F46C20300D702AF /* CLLocation+RGAppUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocation+RGAppUtils.h"; sourceTree = "<group>"; };
+		B784E6451F46C20300D702AF /* CLLocation+RGAppUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocation+RGAppUtils.m"; sourceTree = "<group>"; };
+		B784E6461F46C20300D702AF /* NSBundle+RGAppUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+RGAppUtils.h"; sourceTree = "<group>"; };
+		B784E6471F46C20300D702AF /* NSBundle+RGAppUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+RGAppUtils.m"; sourceTree = "<group>"; };
+		B784E6481F46C20300D702AF /* NSDate+RGAppUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+RGAppUtils.h"; sourceTree = "<group>"; };
+		B784E6491F46C20300D702AF /* NSDate+RGAppUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+RGAppUtils.m"; sourceTree = "<group>"; };
+		B784E64A1F46C20300D702AF /* NSDictionary+RGAppUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+RGAppUtils.h"; sourceTree = "<group>"; };
+		B784E64B1F46C20300D702AF /* NSDictionary+RGAppUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+RGAppUtils.m"; sourceTree = "<group>"; };
+		B784E64D1F46C20300D702AF /* UIAlertController+RGAppUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+RGAppUtils.h"; sourceTree = "<group>"; };
+		B784E64E1F46C20300D702AF /* UIAlertController+RGAppUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+RGAppUtils.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,9 +109,8 @@
 			children = (
 				B73D43501F43D0C00048A97D /* RGAppUtils.h */,
 				B73D434C1F43D08E0048A97D /* App Commons */,
-				B73D434D1F43D08E0048A97D /* Cocoa Types */,
+				B784E6421F46C20300D702AF /* Categories */,
 				B73D434E1F43D08E0048A97D /* RGBuild */,
-				B73D434F1F43D08E0048A97D /* UICategory */,
 			);
 			path = RGAppUtils;
 			sourceTree = "<group>";
@@ -125,21 +124,6 @@
 			path = "App Commons";
 			sourceTree = "<group>";
 		};
-		B73D434D1F43D08E0048A97D /* Cocoa Types */ = {
-			isa = PBXGroup;
-			children = (
-				B784E6391F468E7800D702AF /* CLLocation+RGAppUtils.h */,
-				B784E63A1F468E7800D702AF /* CLLocation+RGAppUtils.m */,
-				B784E63F1F46B77200D702AF /* NSBundle+RGAppUtils.h */,
-				B784E6401F46B77200D702AF /* NSBundle+RGAppUtils.m */,
-				B73D43531F43D12B0048A97D /* NSDate+RGAppUtils.h */,
-				B73D43541F43D12B0048A97D /* NSDate+RGAppUtils.m */,
-				B784E63C1F4695EE00D702AF /* NSDictionary+RGAppUtils.h */,
-				B784E63D1F4695EE00D702AF /* NSDictionary+RGAppUtils.m */,
-			);
-			path = "Cocoa Types";
-			sourceTree = "<group>";
-		};
 		B73D434E1F43D08E0048A97D /* RGBuild */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,15 +131,6 @@
 				B73D435A1F43D1CD0048A97D /* RGMainScreen */,
 			);
 			path = RGBuild;
-			sourceTree = "<group>";
-		};
-		B73D434F1F43D08E0048A97D /* UICategory */ = {
-			isa = PBXGroup;
-			children = (
-				B73D435B1F43D1F70048A97D /* UIAlertController+RGAppUtils.h */,
-				B73D435C1F43D1F70048A97D /* UIAlertController+RGAppUtils.m */,
-			);
-			path = UICategory;
 			sourceTree = "<group>";
 		};
 		B73D43561F43D16F0048A97D /* RGDispatchQueue */ = {
@@ -174,6 +149,39 @@
 				B73D435F1F43D3A90048A97D /* RGMainScreen.m */,
 			);
 			path = RGMainScreen;
+			sourceTree = "<group>";
+		};
+		B784E6421F46C20300D702AF /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				B784E6431F46C20300D702AF /* Cocoa */,
+				B784E64C1F46C20300D702AF /* UIKit */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		B784E6431F46C20300D702AF /* Cocoa */ = {
+			isa = PBXGroup;
+			children = (
+				B784E6441F46C20300D702AF /* CLLocation+RGAppUtils.h */,
+				B784E6451F46C20300D702AF /* CLLocation+RGAppUtils.m */,
+				B784E6461F46C20300D702AF /* NSBundle+RGAppUtils.h */,
+				B784E6471F46C20300D702AF /* NSBundle+RGAppUtils.m */,
+				B784E6481F46C20300D702AF /* NSDate+RGAppUtils.h */,
+				B784E6491F46C20300D702AF /* NSDate+RGAppUtils.m */,
+				B784E64A1F46C20300D702AF /* NSDictionary+RGAppUtils.h */,
+				B784E64B1F46C20300D702AF /* NSDictionary+RGAppUtils.m */,
+			);
+			path = Cocoa;
+			sourceTree = "<group>";
+		};
+		B784E64C1F46C20300D702AF /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				B784E64D1F46C20300D702AF /* UIAlertController+RGAppUtils.h */,
+				B784E64E1F46C20300D702AF /* UIAlertController+RGAppUtils.m */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,16 +256,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B784E63B1F468E7800D702AF /* CLLocation+RGAppUtils.m in Sources */,
+				B784E6521F46C20300D702AF /* NSDictionary+RGAppUtils.m in Sources */,
+				B784E6501F46C20300D702AF /* NSBundle+RGAppUtils.m in Sources */,
 				B73D433B1F43CF410048A97D /* ViewController.m in Sources */,
 				B73D43601F43D3A90048A97D /* RGMainScreen.m in Sources */,
-				B73D435D1F43D1F70048A97D /* UIAlertController+RGAppUtils.m in Sources */,
+				B784E6511F46C20300D702AF /* NSDate+RGAppUtils.m in Sources */,
+				B784E6531F46C20300D702AF /* UIAlertController+RGAppUtils.m in Sources */,
 				B73D43381F43CF410048A97D /* AppDelegate.m in Sources */,
 				B73D43351F43CF410048A97D /* main.m in Sources */,
-				B73D43551F43D12B0048A97D /* NSDate+RGAppUtils.m in Sources */,
-				B784E63E1F4695EE00D702AF /* NSDictionary+RGAppUtils.m in Sources */,
 				B73D43591F43D16F0048A97D /* RGDispatchQueue.m in Sources */,
-				B784E6411F46B77200D702AF /* NSBundle+RGAppUtils.m in Sources */,
+				B784E64F1F46C20300D702AF /* CLLocation+RGAppUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
