@@ -10,6 +10,19 @@
 
 @implementation NSString (RGAppUtils)
 
+- (NSData *)rg_base64Data {
+    return [[NSData alloc] initWithBase64EncodedString:self options:NSDataBase64DecodingIgnoreUnknownCharacters];
+}
+
+- (UIImage *)rg_base64Image {
+    NSData *data = [self rg_base64Data];
+    if (data == nil) {
+        return nil;
+    } else {
+        return [UIImage imageWithData:data];
+    }
+}
+
 - (id)rg_toObject {
     NSString *string = [self stringByReplacingOccurrencesOfString:@"\0" withString:@""];
     NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
