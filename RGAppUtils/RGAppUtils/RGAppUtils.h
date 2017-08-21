@@ -20,6 +20,7 @@
 #import "NSDictionary+RGAppUtils.h"
 #import "NSFileManager+RGAppUtils.h"
 #import "NSObject+RGAppUtils.h"
+#import "NSString+RGAppUtils.h"
 #import "NSUserDefaults+RGAppUtils.h"
 
 #import "UIAlertController+RGAppUtils.h"

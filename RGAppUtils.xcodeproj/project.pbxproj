@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B7207D2A1F4A7B5B0001BEE9 /* NSString+RGAppUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B7207D291F4A7B5B0001BEE9 /* NSString+RGAppUtils.m */; };
 		B73D43351F43CF410048A97D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D43341F43CF410048A97D /* main.m */; };
 		B73D43381F43CF410048A97D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D43371F43CF410048A97D /* AppDelegate.m */; };
 		B73D433B1F43CF410048A97D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D433A1F43CF410048A97D /* ViewController.m */; };
@@ -33,6 +34,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B7207D281F4A7B5B0001BEE9 /* NSString+RGAppUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RGAppUtils.h"; sourceTree = "<group>"; };
+		B7207D291F4A7B5B0001BEE9 /* NSString+RGAppUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RGAppUtils.m"; sourceTree = "<group>"; };
 		B73D43301F43CF410048A97D /* RGAppUtils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RGAppUtils.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B73D43341F43CF410048A97D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B73D43361F43CF410048A97D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -205,6 +208,8 @@
 				B784E6551F46C54B00D702AF /* NSFileManager+RGAppUtils.m */,
 				B784E6571F46C56D00D702AF /* NSObject+RGAppUtils.h */,
 				B784E6581F46C56D00D702AF /* NSObject+RGAppUtils.m */,
+				B7207D281F4A7B5B0001BEE9 /* NSString+RGAppUtils.h */,
+				B7207D291F4A7B5B0001BEE9 /* NSString+RGAppUtils.m */,
 				B784E65A1F46C58000D702AF /* NSUserDefaults+RGAppUtils.h */,
 				B784E65B1F46C58000D702AF /* NSUserDefaults+RGAppUtils.m */,
 			);
@@ -321,6 +326,7 @@
 				B784E6621F46C63B00D702AF /* UIDevice+RGAppUtils.m in Sources */,
 				B73D43351F43CF410048A97D /* main.m in Sources */,
 				B784E6561F46C54B00D702AF /* NSFileManager+RGAppUtils.m in Sources */,
+				B7207D2A1F4A7B5B0001BEE9 /* NSString+RGAppUtils.m in Sources */,
 				B73D43591F43D16F0048A97D /* RGDispatchQueue.m in Sources */,
 				B784E6591F46C56D00D702AF /* NSObject+RGAppUtils.m in Sources */,
 				B784E64F1F46C20300D702AF /* CLLocation+RGAppUtils.m in Sources */,
