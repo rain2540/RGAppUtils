@@ -10,4 +10,12 @@
 
 @implementation UITabBar (RGAppUtils)
 
++ (void)rg_barTintColor:(UIColor *)color {
+    [UITabBar appearance].barTintColor = color;
+}
+
++ (void)rg_tintColor:(UIColor *)color {
+    [UITabBar appearance].tintColor = color;
+}
+
 @end
