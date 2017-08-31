@@ -101,6 +101,11 @@
     return self.frame.size;
 }
 
+#pragma mark Center
+- (CGFloat)rg_centerX {
+    return self.center.x;
+}
+
 #pragma mark Special Values
 - (CGFloat)rg_maxX {
     return CGRectGetMaxX(self.frame);
