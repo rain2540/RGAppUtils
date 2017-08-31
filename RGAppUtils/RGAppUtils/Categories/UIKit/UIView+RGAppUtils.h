@@ -130,6 +130,13 @@ typedef NS_ENUM(NSInteger, RGLineDirection) {
  */
 - (CGFloat)rg_centerX;
 
+/**
+ 设置中心横坐标
+
+ @param x 中心横坐标
+ */
+- (void)rg_setCenterX:(CGFloat)x;
+
 #pragma mark Special Values
 /**
  获取视图横坐标最大值

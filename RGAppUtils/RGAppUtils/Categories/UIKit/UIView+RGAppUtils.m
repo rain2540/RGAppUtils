@@ -106,6 +106,12 @@
     return self.center.x;
 }
 
+- (void)rg_setCenterX:(CGFloat)x {
+    CGPoint center = self.center;
+    center.x = x;
+    self.center = center;
+}
+
 #pragma mark Special Values
 - (CGFloat)rg_maxX {
     return CGRectGetMaxX(self.frame);
