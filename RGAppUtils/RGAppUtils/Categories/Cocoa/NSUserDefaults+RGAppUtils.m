@@ -11,14 +11,7 @@
 @implementation NSUserDefaults (RGAppUtils)
 
 - (BOOL)rg_isHaveKey:(NSString *)key {
-    NSDictionary *userDefaultsDic = self.dictionaryRepresentation;
-    NSArray *keys = userDefaultsDic.allKeys;
-    for (NSString *aKey in keys) {
-        if ([key isEqualToString:aKey]) {
-            return YES;
-        }
-    }
-    return NO;
+    return [self objectForKey:key] != nil;
 }
 
 - (void)rg_saveObject:(id)object
