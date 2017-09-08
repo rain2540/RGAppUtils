@@ -68,7 +68,7 @@ typedef NS_ENUM(NSInteger, RGLineDirection) {
 /**
  设置视图左上端点横坐标值
 
- @param x 将要设置的视图左上端点横坐标值
+ @param x 视图左上端点横坐标值
  */
 - (void)rg_setX:(CGFloat)x;
 
@@ -82,7 +82,7 @@ typedef NS_ENUM(NSInteger, RGLineDirection) {
 /**
  设置视图左上端点纵坐标值
 
- @param y 将要设置的视图左上端点纵坐标值
+ @param y 视图左上端点纵坐标值
  */
 - (void)rg_setY:(CGFloat)y;
 
@@ -97,7 +97,7 @@ typedef NS_ENUM(NSInteger, RGLineDirection) {
 /**
  设置视图宽度
 
- @param width 将要设置的视图宽度
+ @param width 视图宽度
  */
 - (void)rg_setWidth:(CGFloat)width;
 
@@ -111,7 +111,7 @@ typedef NS_ENUM(NSInteger, RGLineDirection) {
 /**
  设置视图高度
 
- @param height 将要设置的视图高度
+ @param height 视图高度
  */
 - (void)rg_setHeight:(CGFloat)height;
 
@@ -125,7 +125,7 @@ typedef NS_ENUM(NSInteger, RGLineDirection) {
 /**
  设置视图大小
 
- @param size 将要设置的视图大小
+ @param size 视图大小
  */
 - (void)rg_setSize:(CGSize)size;
 
@@ -157,6 +157,63 @@ typedef NS_ENUM(NSInteger, RGLineDirection) {
  @param y 视图中心纵坐标
  */
 - (void)rg_setCenterY:(CGFloat)y;
+
+#pragma mark Border
+/**
+ 获取视图上边界
+
+ @return 视图上边界
+ */
+- (CGFloat)rg_top;
+
+/**
+ 设置视图上边界
+
+ @param top 视图上边界
+ */
+- (void)rg_setTop:(CGFloat)top;
+
+/**
+ 获取视图下边界
+
+ @return 视图下边界
+ */
+- (CGFloat)rg_bottom;
+
+/**
+ 设置视图下边界
+
+ @param bottom 视图下边界
+ */
+- (void)rg_setBottom:(CGFloat)bottom;
+
+/**
+ 获取视图左边界
+
+ @return 视图左边界
+ */
+- (CGFloat)rg_left;
+
+/**
+ 设置视图左边界
+
+ @param left 视图左边界
+ */
+- (void)rg_setLeft:(CGFloat)left;
+
+/**
+ 获取视图右边界
+
+ @return 视图右边界
+ */
+- (CGFloat)rg_right;
+
+/**
+ 设置视图右边界
+
+ @param right 视图右边界
+ */
+- (void)rg_setRight:(CGFloat)right;
 
 #pragma mark Special Values
 /**

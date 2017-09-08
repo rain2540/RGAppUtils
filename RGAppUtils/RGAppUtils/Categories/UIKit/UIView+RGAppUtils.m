@@ -128,6 +128,39 @@
     self.center = center;
 }
 
+#pragma mark Border
+- (CGFloat)rg_top {
+    return [self rg_y];
+}
+
+- (void)rg_setTop:(CGFloat)top {
+    [self rg_setY:top];
+}
+
+- (CGFloat)rg_bottom {
+    return [self rg_y] + [self rg_height];
+}
+
+- (void)rg_setBottom:(CGFloat)bottom {
+    [self rg_setY:(bottom - [self rg_height])];
+}
+
+- (CGFloat)rg_left {
+    return [self rg_x];
+}
+
+- (void)rg_setLeft:(CGFloat)left {
+    [self rg_setX:left];
+}
+
+- (CGFloat)rg_right {
+    return [self rg_x] + [self rg_width];
+}
+
+- (void)rg_setRight:(CGFloat)right {
+    [self rg_setX:(right - [self rg_width])];
+}
+
 #pragma mark Special Values
 - (CGFloat)rg_maxX {
     return CGRectGetMaxX(self.frame);
