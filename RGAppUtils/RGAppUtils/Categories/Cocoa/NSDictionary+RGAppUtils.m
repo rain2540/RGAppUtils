@@ -11,13 +11,7 @@
 @implementation NSDictionary (RGAppUtils)
 
 - (BOOL)rg_isHaveKey:(nonnull NSString *)key {
-    NSArray *keys = [self allKeys];
-    for (NSString *aKey in keys) {
-        if ([key isEqualToString:aKey]) {
-            return YES;
-        }
-    }
-    return NO;
+    return [self objectForKey:key] != nil;
 }
 
 - (nullable instancetype)rg_initWithMainBundlePathForResource:(nullable NSString *)name
