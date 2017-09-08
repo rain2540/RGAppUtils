@@ -25,11 +25,47 @@
 - (NSString *)rg_base64String;
 
 /**
- 将图片转换到新的尺寸, 并返回新尺寸的图片对象
+ 创建矩形图像
 
- @param newSize 图片新尺寸
- @return 新尺寸的图片对象
+ @param size 尺寸
+ @param backColor 背景色
+ @param borderColor 边线颜色
+ @param borderWidth 边线宽度
+ @return 新创建的矩形图像
  */
-- (UIImage *)rg_transToNewSize:(CGSize)newSize;
+- (UIImage *)rg_createRectImageWithSize:(CGSize)size
+                              backColor:(UIColor *)backColor
+                            borderColor:(UIColor *)borderColor
+                            borderWidth:(CGFloat)borderWidth;
+
+/**
+ 创建圆角图像
+
+ @param size 尺寸
+ @param backColor 背景色
+ @param borderColor 边线颜色
+ @param borderWidth 边线宽度
+ @return 新创建的圆角图像
+ */
+- (UIImage *)rg_createCircleImageWithSize:(CGSize)size
+                                backColor:(UIColor *)backColor
+                              borderColor:(UIColor *)borderColor
+                              borderWidth:(CGFloat)borderWidth;
+
+/**
+ 创建圆角矩形图像
+
+ @param size 尺寸
+ @param cornerRadius 圆角半径
+ @param backColor 背景色
+ @param borderColor 边线颜色
+ @param borderWidth 边线宽度
+ @return 新创建的圆角矩形图像
+ */
+- (UIImage *)rg_createRoundRectImageWithSize:(CGSize)size
+                                cornerRadius:(CGFloat)cornerRadius
+                                   backColor:(UIColor *)backColor
+                                 borderColor:(UIColor *)borderColor
+                                 borderWidth:(CGFloat)borderWidth;
 
 @end
