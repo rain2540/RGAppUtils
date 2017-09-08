@@ -122,20 +122,41 @@ typedef NS_ENUM(NSInteger, RGLineDirection) {
  */
 - (CGSize)rg_size;
 
+/**
+ 设置视图大小
+
+ @param size 将要设置的视图大小
+ */
+- (void)rg_setSize:(CGSize)size;
+
 #pragma mark Center
 /**
- 获取中心横坐标
+ 获取视图中心横坐标
 
- @return 中心横坐标
+ @return 视图中心横坐标
  */
 - (CGFloat)rg_centerX;
 
 /**
- 设置中心横坐标
+ 设置视图中心横坐标
 
- @param x 中心横坐标
+ @param x 视图中心横坐标
  */
 - (void)rg_setCenterX:(CGFloat)x;
+
+/**
+ 获取视图中心纵坐标
+
+ @return 视图中心纵坐标
+ */
+- (CGFloat)rg_centerY;
+
+/**
+ 设置视图中心纵坐标
+
+ @param y 视图中心纵坐标
+ */
+- (void)rg_setCenterY:(CGFloat)y;
 
 #pragma mark Special Values
 /**

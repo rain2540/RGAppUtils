@@ -101,6 +101,12 @@
     return self.frame.size;
 }
 
+- (void)rg_setSize:(CGSize)size {
+    CGRect frame = self.frame;
+    frame.size = size;
+    self.frame = frame;
+}
+
 #pragma mark Center
 - (CGFloat)rg_centerX {
     return self.center.x;
@@ -109,6 +115,16 @@
 - (void)rg_setCenterX:(CGFloat)x {
     CGPoint center = self.center;
     center.x = x;
+    self.center = center;
+}
+
+- (CGFloat)rg_centerY {
+    return self.center.y;
+}
+
+- (void)rg_setCenterY:(CGFloat)y {
+    CGPoint center = self.center;
+    center.y = y;
     self.center = center;
 }
 
