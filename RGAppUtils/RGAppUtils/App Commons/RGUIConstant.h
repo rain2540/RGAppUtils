@@ -61,4 +61,9 @@ static const CGFloat TextFieldDefaultHeight = 30.0f;
  */
 static const CGFloat TableViewCellDefaultHeight = 44.0f;
 
+/**
+ Home Indicator 所在区域高度
+ */
+static const CGFloat HomeIndicatorAreaHeight = 34.0f;
+
 #endif /* RGUIConstant_h */
