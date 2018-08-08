@@ -85,3 +85,9 @@
 - (NSInteger)rg_second;
 
 @end
+
+@interface NSDate (Trans)
+
++ (NSDate *)rg_dateFromString:(NSString *)dateString;
+    
+@end

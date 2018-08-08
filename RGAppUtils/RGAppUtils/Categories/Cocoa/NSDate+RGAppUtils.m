@@ -66,3 +66,15 @@
 }
 
 @end
+
+@implementation NSDate (Trans)
+    
++ (NSDate *)rg_dateFromString:(NSString *)dateString {
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd"];
+    //        [dateFormatter setDateFormat: @"yyyy-MM-dd HH:mm:ss"];
+    NSDate *destDate = [dateFormatter dateFromString:dateString];
+    return destDate;
+}
+    
+@end
