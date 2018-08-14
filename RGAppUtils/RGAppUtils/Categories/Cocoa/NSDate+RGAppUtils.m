@@ -76,5 +76,14 @@
     NSDate *destDate = [dateFormatter dateFromString:dateString];
     return destDate;
 }
+
+- (NSString *)rg_dateString {
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    //zzz表示时区，zzz可以删除，这样返回的日期字符将不包含时区信息。
+    //    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss zzz"];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd"];
+    NSString *destDateString = [dateFormatter stringFromDate:self];
+    return destDateString;
+}
     
 @end

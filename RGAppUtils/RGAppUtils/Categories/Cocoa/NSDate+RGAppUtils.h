@@ -89,5 +89,7 @@
 @interface NSDate (Trans)
 
 + (NSDate *)rg_dateFromString:(NSString *)dateString;
+
+- (NSString *)rg_dateString;
     
 @end
