@@ -85,5 +85,20 @@
     NSString *destDateString = [dateFormatter stringFromDate:self];
     return destDateString;
 }
+
++ (NSString *)secondFormatTime:(NSInteger)totalSecond
+                       hasHour:(BOOL)hasHour
+{
+    NSInteger seconds = totalSecond % 60;
+    NSInteger minutes = (totalSecond / 60) % 60;
+    NSInteger hours = totalSecond / 3600;
+    NSString *result;
+    if (hasHour) {
+        result = [NSString stringWithFormat:@"%02ld:%02ld:%02ld",(long)hours,(long)minutes,(long)seconds];
+    } else {
+        result = [NSString stringWithFormat:@"%02ld:%02ld",(long)minutes,(long)seconds];
+    }
+    return result;
+}
     
 @end

@@ -91,5 +91,8 @@
 + (NSDate *)rg_dateFromString:(NSString *)dateString;
 
 - (NSString *)rg_dateString;
-    
+
++ (NSString *)secondFormatTime:(NSInteger)totalSecond
+                       hasHour:(BOOL)hasHour;
+
 @end
