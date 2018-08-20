@@ -68,7 +68,7 @@
 @end
 
 @implementation NSDate (Trans)
-    
+
 + (NSDate *)rg_dateFromString:(NSString *)dateString {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"yyyy-MM-dd"];
@@ -86,8 +86,8 @@
     return destDateString;
 }
 
-+ (NSString *)secondFormatTime:(NSInteger)totalSecond
-                       hasHour:(BOOL)hasHour
++ (NSString *)rg_secondFormatTime:(NSInteger)totalSecond
+                          hasHour:(BOOL)hasHour
 {
     NSInteger seconds = totalSecond % 60;
     NSInteger minutes = (totalSecond / 60) % 60;
@@ -100,5 +100,5 @@
     }
     return result;
 }
-    
+
 @end
