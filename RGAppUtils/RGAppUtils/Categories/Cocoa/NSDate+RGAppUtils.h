@@ -88,6 +88,12 @@
 
 @interface NSDate (Trans)
 
+/**
+ 通过时间字符串构建对象
+
+ @param dateString 时间字符串
+ @return 时间对象
+ */
 + (NSDate *)rg_dateFromString:(NSString *)dateString;
 
 - (NSString *)rg_dateString;
