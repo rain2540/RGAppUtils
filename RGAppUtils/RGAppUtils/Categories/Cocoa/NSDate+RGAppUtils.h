@@ -96,6 +96,11 @@
  */
 + (NSDate *)rg_dateFromString:(NSString *)dateString;
 
+/**
+ 时间对应的字符串
+
+ @return 表示时间的字符串
+ */
 - (NSString *)rg_dateString;
 
 + (NSString *)rg_secondFormatTime:(NSInteger)totalSecond
