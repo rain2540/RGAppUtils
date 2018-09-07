@@ -103,6 +103,13 @@
  */
 - (NSString *)rg_dateString;
 
+/**
+ 秒数转化为格式化时间 (HH:mm:ss)
+
+ @param totalSecond 总秒数
+ @param hasHour 是否含有小时字段
+ @return 格式化的时间字符串
+ */
 + (NSString *)rg_secondFormatTime:(NSInteger)totalSecond
                           hasHour:(BOOL)hasHour;
 
