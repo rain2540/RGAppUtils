@@ -78,12 +78,7 @@
         return DeviceType_iPhone_4S;
     }
 
-    if ([platform isEqualToString:@"iPhone5,1"]) {
-        NSLog(@"RGAppUtils Device Type: iPhone 5");
-        return DeviceType_iPhone_5;
-    }
-
-    if ([platform isEqualToString:@"iPhone5,2"]) {
+    if ([platform isEqualToString:@"iPhone5,1"] || [platform isEqualToString:@"iPhone5,2"]) {
         NSLog(@"RGAppUtils Device Type: iPhone 5");
         return DeviceType_iPhone_5;
     }
@@ -133,7 +128,7 @@
         return DeviceType_iPhone_SE;
     }
 
-    if ([platform isEqualToString:@"iPhone9,1"]) {
+    if ([platform isEqualToString:@"iPhone9,1"] || [platform isEqualToString:@"iPhone9,3"]) {
         NSLog(@"RGAppUtils Device Type: iPhone 7");
         return DeviceType_iPhone_7;
     }
