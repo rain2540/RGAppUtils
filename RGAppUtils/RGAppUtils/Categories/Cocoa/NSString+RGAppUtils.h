@@ -33,3 +33,11 @@
 - (id)rg_toObject;
 
 @end
+
+
+@interface NSString (Pinyin)
+
+- (NSString *)transToPinyinWithPhonogram:(BOOL)phonogram
+                               uppercase:(BOOL)uppercase;
+
+@end

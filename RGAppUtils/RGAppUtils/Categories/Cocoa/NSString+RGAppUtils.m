@@ -35,3 +35,31 @@
 }
 
 @end
+
+
+@implementation NSString (Pinyin)
+
+- (NSString *)transToPinyinWithPhonogram:(BOOL)phonogram
+                               uppercase:(BOOL)uppercase
+{
+    NSMutableString *pinyin = [self mutableCopy];
+
+    if (pinyin && ![pinyin isEqualToString:@""]) {
+        CFStringTransform((__bridge CFMutableStringRef)pinyin, NULL, kCFStringTransformMandarinLatin, false);
+        NSLog(@"pinyin with phonogram: %@", pinyin);
+
+        if (!phonogram) {
+            CFStringTransform((__bridge CFMutableStringRef)pinyin, NULL, kCFStringTransformStripCombiningMarks, false);
+            NSLog(@"pinyin without phonogram: %@", pinyin);
+        }
+
+        if (uppercase) {
+            pinyin = (NSMutableString *)pinyin.uppercaseString;
+            NSLog(@"pinyin without phonogram uppercase: %@", pinyin);
+        }
+    }
+
+    return pinyin;
+}
+
+@end
