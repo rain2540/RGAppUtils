@@ -37,6 +37,13 @@
 
 @interface NSString (Pinyin)
 
+/**
+ 将汉字转化为拼音
+
+ @param phonogram 是否显示声调
+ @param uppercase 是否大写
+ @return 转换后的拼音字符串
+ */
 - (NSString *)transToPinyinWithPhonogram:(BOOL)phonogram
                                uppercase:(BOOL)uppercase;
 
