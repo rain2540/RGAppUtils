@@ -133,7 +133,7 @@
         return DeviceType_iPhone_7;
     }
 
-    if ([platform isEqualToString:@"iPhone9,2"]) {
+    if ([platform isEqualToString:@"iPhone9,2"] || [platform isEqualToString:@"iPhone9,4"]) {
         NSLog(@"RGAppUtils Device Type: iPhone 7 Plus");
         return DeviceType_iPhone_7_Plus;
     }
