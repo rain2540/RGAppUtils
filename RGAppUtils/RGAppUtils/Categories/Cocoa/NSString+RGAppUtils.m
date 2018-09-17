@@ -34,6 +34,26 @@
     return obj;
 }
 
++ (NSString *)rg_convertFromJSONObject:(id)obj {
+    NSError *error;
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:obj
+                                                       options:NSJSONWritingPrettyPrinted // Pass 0 if you don't care about the readability of the generated string
+                                                         error:&error];
+    NSString *jsonString = @"";
+
+    if (!jsonData) {
+        NSLog(@"RGAppUtils NSString from object Error: \n%@", error);
+    } else {
+        jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+    }
+
+    // 去除掉首尾的空白字符和换行字符
+    jsonString = [jsonString stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    [jsonString stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+    
+    return jsonString;
+}
+
 @end
 
 

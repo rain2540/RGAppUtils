@@ -32,6 +32,8 @@
  */
 - (id)rg_toObject;
 
++ (NSString *)rg_convertFromJSONObject:(id)obj;
+
 @end
 
 
