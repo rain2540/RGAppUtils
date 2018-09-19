@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+
 @interface NSString (RGAppUtils)
 
 /**
@@ -32,6 +33,12 @@
  */
 - (id)rg_toObject;
 
+/**
+ JSON 对象转换为字符串
+
+ @param obj JSON 对象
+ @return 转换后的字符串
+ */
 + (NSString *)rg_convertFromJSONObject:(id)obj;
 
 @end

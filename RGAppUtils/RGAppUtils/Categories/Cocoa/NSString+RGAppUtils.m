@@ -8,6 +8,7 @@
 
 #import "NSString+RGAppUtils.h"
 
+
 @implementation NSString (RGAppUtils)
 
 - (NSData *)rg_base64Data {
