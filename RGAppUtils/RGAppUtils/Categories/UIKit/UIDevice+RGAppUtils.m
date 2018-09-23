@@ -142,6 +142,11 @@
         NSLog(@"RGAppUtils Device Type: iPhone 8");
         return DeviceType_iPhone_8;
     }
+    
+    if ([platform isEqualToString:@"iPhone10,2"] || [platform isEqualToString:@"iPhone10,5"]) {
+        NSLog(@"RGAppUtils Device Type: iPhone 8 Plus");
+        return DeviceType_iPhone_8_Plus;
+    }
 
     if ([platform isEqualToString:@"iPod1,1"]) {
         NSLog(@"RGAppUtils Device Type: iPod Touch 1G");
