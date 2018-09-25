@@ -148,6 +148,11 @@
         return DeviceType_iPhone_8_Plus;
     }
 
+    if ([platform isEqualToString:@"iPhone10,3"] || [platform isEqualToString:@"iPhone10,6"]) {
+        NSLog(@"RGAppUtils Device Type: iPhone X");
+        return DeviceType_iPhone_X;
+    }
+
     if ([platform isEqualToString:@"iPod1,1"]) {
         NSLog(@"RGAppUtils Device Type: iPod Touch 1G");
         return DeviceType_iPod_Touch_1;
