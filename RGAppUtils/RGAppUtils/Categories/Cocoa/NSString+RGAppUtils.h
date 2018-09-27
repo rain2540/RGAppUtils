@@ -53,7 +53,7 @@
  @param uppercase 是否大写
  @return 转换后的拼音字符串
  */
-- (NSString *)transToPinyinWithPhonogram:(BOOL)phonogram
-                               uppercase:(BOOL)uppercase;
+- (NSString *)rg_transToPinyinWithPhonogram:(BOOL)phonogram
+                                  uppercase:(BOOL)uppercase;
 
 @end
