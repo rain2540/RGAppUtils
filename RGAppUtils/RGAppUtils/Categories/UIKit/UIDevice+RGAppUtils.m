@@ -58,12 +58,10 @@
         return DeviceType_iPhone_3GS;
     }
 
-    if ([platform isEqualToString:@"iPhone3,1"] || [platform isEqualToString:@"iPhone3,2"]) {
-        NSLog(@"RGAppUtils Device Type: iPhone 4");
-        return DeviceType_iPhone_4;
-    }
-
-    if ([platform isEqualToString:@"iPhone3,3"]) {
+    if ([platform isEqualToString:@"iPhone3,1"] ||
+        [platform isEqualToString:@"iPhone3,2"] ||
+        [platform isEqualToString:@"iPhone3,3"])
+    {
         NSLog(@"RGAppUtils Device Type: iPhone 4");
         return DeviceType_iPhone_4;
     }
