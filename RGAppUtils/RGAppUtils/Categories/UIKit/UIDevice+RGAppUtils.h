@@ -77,6 +77,8 @@ typedef NS_ENUM(NSInteger, DeviceType) {
  */
 + (NSString *)rg_stringOfDeviceTime;
 
++ (BOOL)rg_isIPhoneXSeries;
+
 /**
  获取当前设备类型
 
