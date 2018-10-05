@@ -77,6 +77,11 @@ typedef NS_ENUM(NSInteger, DeviceType) {
  */
 + (NSString *)rg_stringOfDeviceTime;
 
+/**
+ 判断设备是否是 iPhone X 系列
+
+ @return 判断结果
+ */
 + (BOOL)rg_isIPhoneXSeries;
 
 /**
