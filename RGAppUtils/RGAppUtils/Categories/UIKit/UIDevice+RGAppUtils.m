@@ -38,7 +38,7 @@
 
 + (BOOL)rg_isIPhoneXSeries {
     BOOL iPhoneXSeries = NO;
-    if ([UIDevice currentDevice].userInterfaceIdiom != UIUserInterfaceIdiomPhone) {
+    if (![UIDevice rg_isPhone]) {
         return iPhoneXSeries;
     }
     
