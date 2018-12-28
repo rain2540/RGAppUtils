@@ -91,6 +91,11 @@ typedef NS_ENUM(NSInteger, DeviceType) {
  */
 + (BOOL)rg_isPhone;
 
+/**
+ 判断设备是否为 iPad
+
+ @return 判断结果
+ */
 + (BOOL)rg_isPad;
 
 /**
