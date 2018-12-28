@@ -91,6 +91,8 @@ typedef NS_ENUM(NSInteger, DeviceType) {
  */
 + (BOOL)rg_isPhone;
 
++ (BOOL)rg_isPad;
+
 /**
  获取当前设备类型
 

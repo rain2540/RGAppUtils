@@ -56,6 +56,10 @@
     return [UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPhone;
 }
 
++ (BOOL)rg_isPad {
+    return [UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad;
+}
+
 + (DeviceType)rg_deviceType {
     struct utsname systemInfo;
 
