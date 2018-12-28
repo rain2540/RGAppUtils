@@ -52,6 +52,10 @@
     return iPhoneXSeries;
 }
 
++ (BOOL)rg_isPhone {
+    return [UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPhone;
+}
+
 + (DeviceType)rg_deviceType {
     struct utsname systemInfo;
 

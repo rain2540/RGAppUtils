@@ -84,6 +84,8 @@ typedef NS_ENUM(NSInteger, DeviceType) {
  */
 + (BOOL)rg_isIPhoneXSeries;
 
++ (BOOL)rg_isPhone;
+
 /**
  获取当前设备类型
 
