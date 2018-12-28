@@ -84,6 +84,11 @@ typedef NS_ENUM(NSInteger, DeviceType) {
  */
 + (BOOL)rg_isIPhoneXSeries;
 
+/**
+ 判断设备是否为 iPhone
+
+ @return 判断结果
+ */
 + (BOOL)rg_isPhone;
 
 /**
