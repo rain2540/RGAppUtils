@@ -26,6 +26,13 @@
  */
 - (UIImage *)rg_base64Image;
 
+/**
+ 返回为 keyword 着色的 attributed string
+
+ @param keyword 需要着色的关键词
+ @param color keyword 的颜色
+ @return 完成 keyword 着色的 attributed string
+ */
 - (NSMutableAttributedString *)rg_attributedStringWithKeyword:(NSString *)keyword
                                                  keywordColor:(UIColor *)color;
 
