@@ -26,6 +26,9 @@
  */
 - (UIImage *)rg_base64Image;
 
+- (NSMutableAttributedString *)rg_attributedStringWithKeyword:(NSString *)keyword
+                                                 keywordColor:(UIColor *)color;
+
 /**
  转换为 JSON 对象
 
