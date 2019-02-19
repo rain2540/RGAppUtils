@@ -35,6 +35,19 @@
     return attrString;
 }
 
+- (NSMutableAttributedString *)rg_attributedStringWithKeyword:(NSString *)keyword
+                                                 keywordColor:(UIColor *)color
+                                                  keywordFont:(UIFont *)font
+{
+    NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc] initWithString:self];
+    if (keyword && ![keyword isEqualToString:@""]) {
+        NSRange keywordRange = [self rangeOfString:keyword];
+        [attrString addAttribute:NSForegroundColorAttributeName value:color range:keywordRange];
+        [attrString addAttribute:NSFontAttributeName value:font range:keywordRange];
+    }
+    return attrString;
+}
+
 - (id)rg_toObject {
     NSString *string = [self stringByReplacingOccurrencesOfString:@"\0" withString:@""];
     NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];

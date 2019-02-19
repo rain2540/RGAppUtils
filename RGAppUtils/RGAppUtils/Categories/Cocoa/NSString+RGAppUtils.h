@@ -36,6 +36,10 @@
 - (NSMutableAttributedString *)rg_attributedStringWithKeyword:(NSString *)keyword
                                                  keywordColor:(UIColor *)color;
 
+- (NSMutableAttributedString *)rg_attributedStringWithKeyword:(NSString *)keyword
+                                                 keywordColor:(UIColor *)color
+                                                  keywordFont:(UIFont *)font;
+
 /**
  转换为 JSON 对象
 
