@@ -27,12 +27,8 @@
 - (NSMutableAttributedString *)rg_attributedStringWithKeyword:(NSString *)keyword
                                                  keywordColor:(UIColor *)color
 {
-    NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc] initWithString:self];
-    if (keyword && ![keyword isEqualToString:@""]) {
-        NSRange keywordRange = [self rangeOfString:keyword];
-        [attrString addAttribute:NSForegroundColorAttributeName value:color range:keywordRange];
-    }
-    return attrString;
+    UIFont *font = [UIFont systemFontOfSize:12.0];
+    return [self rg_attributedStringWithKeyword:keyword keywordColor:color keywordFont:font];
 }
 
 - (NSMutableAttributedString *)rg_attributedStringWithKeyword:(NSString *)keyword
