@@ -31,6 +31,7 @@
 		B784E66B1F46C68000D702AF /* UITabBar+RGAppUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B784E66A1F46C68000D702AF /* UITabBar+RGAppUtils.m */; };
 		B784E66E1F46C69400D702AF /* UIView+RGAppUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B784E66D1F46C69400D702AF /* UIView+RGAppUtils.m */; };
 		B784E6711F46C6A200D702AF /* UIViewController+RGAppUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B784E6701F46C6A200D702AF /* UIViewController+RGAppUtils.m */; };
+		B7FDC7FB22236FEE0051414C /* UITextField+RGAppUtitls.m in Sources */ = {isa = PBXBuildFile; fileRef = B7FDC7FA22236FEE0051414C /* UITextField+RGAppUtitls.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +84,8 @@
 		B784E66D1F46C69400D702AF /* UIView+RGAppUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RGAppUtils.m"; sourceTree = "<group>"; };
 		B784E66F1F46C6A200D702AF /* UIViewController+RGAppUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RGAppUtils.h"; sourceTree = "<group>"; };
 		B784E6701F46C6A200D702AF /* UIViewController+RGAppUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RGAppUtils.m"; sourceTree = "<group>"; };
+		B7FDC7F922236FEE0051414C /* UITextField+RGAppUtitls.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+RGAppUtitls.h"; sourceTree = "<group>"; };
+		B7FDC7FA22236FEE0051414C /* UITextField+RGAppUtitls.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+RGAppUtitls.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +234,8 @@
 				B784E6671F46C66F00D702AF /* UINavigationBar+RGAppUtils.m */,
 				B784E6691F46C68000D702AF /* UITabBar+RGAppUtils.h */,
 				B784E66A1F46C68000D702AF /* UITabBar+RGAppUtils.m */,
+				B7FDC7F922236FEE0051414C /* UITextField+RGAppUtitls.h */,
+				B7FDC7FA22236FEE0051414C /* UITextField+RGAppUtitls.m */,
 				B784E66C1F46C69400D702AF /* UIView+RGAppUtils.h */,
 				B784E66D1F46C69400D702AF /* UIView+RGAppUtils.m */,
 				B784E66F1F46C6A200D702AF /* UIViewController+RGAppUtils.h */,
@@ -330,6 +335,7 @@
 				B73D43591F43D16F0048A97D /* RGDispatchQueue.m in Sources */,
 				B784E6591F46C56D00D702AF /* NSObject+RGAppUtils.m in Sources */,
 				B784E64F1F46C20300D702AF /* CLLocation+RGAppUtils.m in Sources */,
+				B7FDC7FB22236FEE0051414C /* UITextField+RGAppUtitls.m in Sources */,
 				B784E66E1F46C69400D702AF /* UIView+RGAppUtils.m in Sources */,
 				B784E6711F46C6A200D702AF /* UIViewController+RGAppUtils.m in Sources */,
 			);
