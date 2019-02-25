@@ -10,4 +10,17 @@
 
 @implementation UITextField (RGAppUtitls)
 
+
+#pragma mark - Private
+- (UIImageView *)createImageViewByName:(NSString *)name
+                                 frame:(CGRect)frame
+                           contentMode:(UIViewContentMode)contentMode
+{
+    UIImageView *imageView = [[UIImageView alloc] init];
+    imageView.image = [UIImage imageNamed:name];
+    imageView.frame = frame;
+    imageView.contentMode = contentMode;
+    return imageView;
+}
+
 @end
