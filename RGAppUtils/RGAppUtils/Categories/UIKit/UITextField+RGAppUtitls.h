@@ -12,6 +12,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UITextField (RGAppUtitls)
 
+/**
+ 为 TextField 添加右侧图片
+
+ @param name 图片名
+ @param frame 图片的 frame
+ @param contentMode 图片的 content mode
+ @param showMode 图片的显示模式
+ */
 - (void)rg_addRightImageByName:(NSString *)name
                          frame:(CGRect)frame
                    contentMode:(UIViewContentMode)contentMode
