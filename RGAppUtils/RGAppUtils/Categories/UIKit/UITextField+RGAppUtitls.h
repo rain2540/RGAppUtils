@@ -12,6 +12,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UITextField (RGAppUtitls)
 
+- (void)rg_addRightImageByName:(NSString *)name
+                         frame:(CGRect)frame
+                   contentMode:(UIViewContentMode)contentMode
+                      showMode:(UITextFieldViewMode)showMode;
+
 @end
 
 NS_ASSUME_NONNULL_END
