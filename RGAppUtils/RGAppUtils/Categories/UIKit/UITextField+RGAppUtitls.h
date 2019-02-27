@@ -12,6 +12,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UITextField (RGAppUtitls)
 
+- (void)rg_addLeftImageByName:(NSString *)name
+                        frame:(CGRect)frame
+                  contentMode:(UIViewContentMode)contentMode
+                     showMode:(UITextFieldViewMode)showMode;
+
 /**
  为 TextField 添加右侧图片
 

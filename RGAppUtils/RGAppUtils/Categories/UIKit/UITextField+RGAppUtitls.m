@@ -10,6 +10,18 @@
 
 @implementation UITextField (RGAppUtitls)
 
+- (void)rg_addLeftImageByName:(NSString *)name
+                        frame:(CGRect)frame
+                  contentMode:(UIViewContentMode)contentMode
+                     showMode:(UITextFieldViewMode)showMode
+{
+    UIImageView *imageView = [self createImageViewByName:name
+                                                   frame:frame
+                                             contentMode:contentMode];
+    self.leftViewMode = showMode;
+    self.leftView = imageView;
+}
+
 - (void)rg_addRightImageByName:(NSString *)name
                          frame:(CGRect)frame
                    contentMode:(UIViewContentMode)contentMode
