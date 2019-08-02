@@ -120,6 +120,11 @@
 
 @interface NSDate (Tools)
 
+/**
+ 获取一年以后的时间对象
+
+ @return 一年以后的时间对象
+ */
 - (NSDate *)rg_oneYearLater;
 
 @end
