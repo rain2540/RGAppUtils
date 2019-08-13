@@ -11,6 +11,14 @@
 
 @implementation RGDesUtil
 
+/**
+ 文本数据进行 加密 / 解密, 此函数不可用于过长文本
+
+ @param data 需要加密 / 解密的 文本数据
+ @param key 密钥
+ @param option 加密 / 解密 选项
+ @return 加密 / 解密 后的文本数据
+ */
 + (NSData *)dataWithData:(NSData *)data
                      key:(NSString *)key
             optionForDES:(CCOperation)option
