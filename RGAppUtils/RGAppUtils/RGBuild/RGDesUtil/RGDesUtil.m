@@ -11,6 +11,9 @@
 
 @implementation RGDesUtil
 
+
+#pragma mark - Private
+
 /**
  文本数据进行 加密 / 解密, 此函数不可用于过长文本
 
