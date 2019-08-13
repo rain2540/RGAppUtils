@@ -11,6 +11,7 @@
 
 @implementation RGDesUtil
 
+static const char encodingTable[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
 
 #pragma mark - Private
 
