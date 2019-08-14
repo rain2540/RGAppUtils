@@ -15,6 +15,12 @@ static NSString * const LocalEmptyString = @"";
 static const char encodingTable[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
 
 #pragma mark - Private
++ (NSData *)encryptDataUseDES:(NSData *)data
+                      WithKey:(NSString *)key
+{
+    return [self dataWithData:data key:key optionForDES:kCCEncrypt];
+}
+
 + (NSData *)decryptDataUseDES:(NSData *)data
                       WithKey:(NSString *)key
 {
