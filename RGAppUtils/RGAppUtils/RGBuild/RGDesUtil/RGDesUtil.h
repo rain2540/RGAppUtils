@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface RGDesUtil : NSObject
 
++ (NSString *)base64EncodedStringFrom:(NSData *)data;
+
 @end
 
 NS_ASSUME_NONNULL_END
