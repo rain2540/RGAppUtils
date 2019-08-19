@@ -15,6 +15,9 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSString *)encryptTextUseDES:(NSString *)plainText
                             key:(NSString *)key;
 
++ (NSString *)decryptTextUseDES:(NSString *)encryptText
+                            key:(NSString *)key;
+
 + (NSData *)dataWithBase64EncodedString:(NSString *)string;
 
 + (NSString *)base64EncodedStringFrom:(NSData *)data;

@@ -28,6 +28,21 @@ static const char encodingTable[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopq
     }
 }
 
++ (NSString *)decryptTextUseDES:(NSString *)encryptText
+                            key:(NSString *)key
+{
+    if (encryptText && ![encryptText isEqualToString:LocalEmptyString]) {
+        NSData *data = [self dataWithBase64EncodedString:encryptText];
+        // iOS 自带DES解密 Begin
+        data = [self decryptDataUseDES:data WithKey:key];
+        // iOS 自带DES加密 End
+        return [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    }
+    else {
+        return LocalEmptyString;
+    }
+}
+
 + (NSData *)dataWithBase64EncodedString:(NSString *)string {
     if (string == nil)
         [NSException raise:NSInvalidArgumentException format:nil];
