@@ -12,6 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface RGDesUtil : NSObject
 
++ (NSString *)encryptTextUseDES:(NSString *)plainText
+                            key:(NSString *)key;
+
 + (NSData *)dataWithBase64EncodedString:(NSString *)string;
 
 + (NSString *)base64EncodedStringFrom:(NSData *)data;

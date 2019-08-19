@@ -14,6 +14,20 @@ static const char encodingTable[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopq
 
 @implementation RGDesUtil
 
++ (NSString *)encryptTextUseDES:(NSString *)plainText
+                            key:(NSString *)key
+{
+    if (plainText && ![plainText isEqualToString:LocalEmptyString]) {
+        NSData *data = [plainText dataUsingEncoding:NSUTF8StringEncoding];
+        // iOS 自带DES加密 Begin
+        data = [self encryptDataUseDES:data WithKey:key];
+        // iOS 自带DES加密 End
+        return [self base64EncodedStringFrom:data];
+    } else {
+        return LocalEmptyString;
+    }
+}
+
 + (NSData *)dataWithBase64EncodedString:(NSString *)string {
     if (string == nil)
         [NSException raise:NSInvalidArgumentException format:nil];
