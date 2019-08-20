@@ -18,6 +18,12 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSString *)decryptTextUseDES:(NSString *)encryptText
                             key:(NSString *)key;
 
+/**
+ Base 64 格式字符串转换为文本数据
+
+ @param string Base 64 格式的字符串
+ @return 文本数据
+ */
 + (NSData *)dataWithBase64EncodedString:(NSString *)string;
 
 /**
