@@ -20,6 +20,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (NSData *)dataWithBase64EncodedString:(NSString *)string;
 
+/**
+ 文本数据转换为 Base 64 格式字符串
+
+ @param data 文本数据
+ @return Base 64 字符串
+ */
 + (NSString *)base64EncodedStringFrom:(NSData *)data;
 
 @end
