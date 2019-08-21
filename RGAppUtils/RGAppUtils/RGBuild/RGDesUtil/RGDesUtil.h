@@ -15,6 +15,13 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSString *)encryptTextUseDES:(NSString *)plainText
                             key:(NSString *)key;
 
+/**
+ 返回 DES 解密后的字符串
+
+ @param encryptText 待解密的字符串
+ @param key 密钥
+ @return 解密后的字符串
+ */
 + (NSString *)decryptTextUseDES:(NSString *)encryptText
                             key:(NSString *)key;
 
