@@ -12,6 +12,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface RGDesUtil : NSObject
 
+/**
+ 返回 DES 加密后的字符串
+
+ @param plainText 待加密的字符串
+ @param key 密钥
+ @return 加密后的字符串
+ */
 + (NSString *)encryptTextUseDES:(NSString *)plainText
                             key:(NSString *)key;
 
