@@ -67,4 +67,10 @@
     return value;
 }
 
+- (nonnull NSString *)rg_stringForKey:(nonnull NSString *)key {
+    id value = [self rg_valueForKey:key];
+    NSString *string = [value rg_withoutNull];
+    return string;
+}
+
 @end

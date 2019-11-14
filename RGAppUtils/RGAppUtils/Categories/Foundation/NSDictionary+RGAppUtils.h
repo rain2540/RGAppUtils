@@ -45,4 +45,6 @@
 
 - (nullable id)rg_valueForKey:(nonnull NSString *)key;
 
+- (nonnull NSString *)rg_stringForKey:(nonnull NSString *)key;
+
 @end
