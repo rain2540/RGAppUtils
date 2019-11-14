@@ -10,13 +10,7 @@
 
 @interface NSDictionary (RGAppUtils)
 
-/**
- 检验 NSDictionary 中是否存在某个 key
-
- @param key 待检验的 key
- @return 检验结果的布尔值
- */
-- (BOOL)rg_isHaveKey:(nonnull NSString *)key;
+#pragma mark Convenience Initializer
 
 /**
  获取 Main Bundle 中文件内的字典
@@ -37,5 +31,16 @@
  */
 + (nullable NSDictionary *)rg_dictionaryWithMainBundlePathForResource:(nullable NSString *)name
                                                                ofType:(nullable NSString *)ext;
+
+
+#pragma mark - Puclic
+
+/**
+ 检验 NSDictionary 中是否存在某个 key
+
+ @param key 待检验的 key
+ @return 检验结果的布尔值
+ */
+- (BOOL)rg_isHaveKey:(nonnull NSString *)key;
 
 @end

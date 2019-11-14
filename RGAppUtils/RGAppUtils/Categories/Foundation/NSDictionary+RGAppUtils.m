@@ -10,9 +10,7 @@
 
 @implementation NSDictionary (RGAppUtils)
 
-- (BOOL)rg_isHaveKey:(nonnull NSString *)key {
-    return [self objectForKey:key] != nil;
-}
+#pragma mark Convenience initializer
 
 - (nullable instancetype)rg_initWithMainBundlePathForResource:(nullable NSString *)name
                                                        ofType:(nullable NSString *)ext
@@ -26,6 +24,13 @@
 {
     NSString *path = [[NSBundle mainBundle] pathForResource:name ofType:ext];
     return [NSDictionary dictionaryWithContentsOfFile:path];
+}
+
+
+#pragma mark - Puclic
+
+- (BOOL)rg_isHaveKey:(nonnull NSString *)key {
+    return [self objectForKey:key] != nil;
 }
 
 @end
