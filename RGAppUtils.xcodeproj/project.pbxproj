@@ -191,20 +191,28 @@
 			path = RGMainScreen;
 			sourceTree = "<group>";
 		};
+		B742BFFA237D28530040A9A9 /* Core Location */ = {
+			isa = PBXGroup;
+			children = (
+				B784E6441F46C20300D702AF /* CLLocation+RGAppUtils.h */,
+				B784E6451F46C20300D702AF /* CLLocation+RGAppUtils.m */,
+			);
+			path = "Core Location";
+			sourceTree = "<group>";
+		};
 		B784E6421F46C20300D702AF /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				B784E6431F46C20300D702AF /* Cocoa */,
+				B742BFFA237D28530040A9A9 /* Core Location */,
+				B784E6431F46C20300D702AF /* Foundation */,
 				B784E64C1F46C20300D702AF /* UIKit */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
 		};
-		B784E6431F46C20300D702AF /* Cocoa */ = {
+		B784E6431F46C20300D702AF /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
-				B784E6441F46C20300D702AF /* CLLocation+RGAppUtils.h */,
-				B784E6451F46C20300D702AF /* CLLocation+RGAppUtils.m */,
 				B784E6461F46C20300D702AF /* NSBundle+RGAppUtils.h */,
 				B784E6471F46C20300D702AF /* NSBundle+RGAppUtils.m */,
 				B784E6481F46C20300D702AF /* NSDate+RGAppUtils.h */,
@@ -220,7 +228,7 @@
 				B784E65A1F46C58000D702AF /* NSUserDefaults+RGAppUtils.h */,
 				B784E65B1F46C58000D702AF /* NSUserDefaults+RGAppUtils.m */,
 			);
-			path = Cocoa;
+			path = Foundation;
 			sourceTree = "<group>";
 		};
 		B784E64C1F46C20300D702AF /* UIKit */ = {
