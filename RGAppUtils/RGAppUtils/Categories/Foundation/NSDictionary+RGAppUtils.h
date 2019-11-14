@@ -43,4 +43,6 @@
  */
 - (BOOL)rg_isHaveKey:(nonnull NSString *)key;
 
+- (nullable id)rg_valueForKey:(nonnull NSString *)key;
+
 @end
