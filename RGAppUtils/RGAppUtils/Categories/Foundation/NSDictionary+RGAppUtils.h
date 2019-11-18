@@ -43,6 +43,8 @@
  */
 - (BOOL)rg_isHaveKey:(nonnull NSString *)key;
 
+/// 获取 NSDictionary 某个 key 对应的值
+/// @param key 待获取值的 key
 - (nullable id)rg_valueForKey:(nonnull NSString *)key;
 
 - (nonnull NSString *)rg_stringForKey:(nonnull NSString *)key;
