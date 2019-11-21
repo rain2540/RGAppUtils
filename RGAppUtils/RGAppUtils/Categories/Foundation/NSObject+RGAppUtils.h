@@ -17,6 +17,8 @@
  */
 - (nonnull NSString *)rg_withoutNull;
 
+- (nonnull NSString *)rg_clearNilAndOtherStrings:(nullable NSArray <NSString *> *)otherStrings;
+
 /**
  转换为 JSON String
 

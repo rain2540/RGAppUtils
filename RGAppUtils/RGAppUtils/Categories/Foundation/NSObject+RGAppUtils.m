@@ -20,6 +20,27 @@
     }
 }
 
+- (nonnull NSString *)rg_clearNilAndOtherStrings:(nullable NSArray <NSString *> *)otherStrings {
+    if (self == nil || [self isKindOfClass:[NSNull class]]) {
+        return @"";
+    } else {
+        NSString *string = [NSString stringWithFormat:@"%@", self];
+        BOOL condition = NO;
+        if (otherStrings == nil) {
+            return string;
+        } else {
+            for (NSString *otherString in otherStrings) {
+                condition = condition || [string isEqualToString:otherString];
+            }
+            if (condition) {
+                return @"";
+            } else {
+                return string;
+            }
+        }
+    }
+}
+
 - (NSString *)rg_objectToJSONString {
     NSError *error;
     NSData *data = [NSJSONSerialization dataWithJSONObject:self
