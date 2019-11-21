@@ -11,13 +11,7 @@
 @implementation NSObject (RGAppUtils)
 
 - (nonnull NSString *)rg_withoutNull {
-    if (self == nil || [self isKindOfClass:[NSNull class]]) {
-        return @"";
-    } else if ([self isKindOfClass:[NSNumber class]]) {
-        return [NSString stringWithFormat:@"%@", self];
-    } else {
-        return [NSString stringWithFormat:@"%@", self];
-    }
+    return [self rg_clearNilAndOtherStrings:nil];
 }
 
 - (nonnull NSString *)rg_clearNilAndOtherStrings:(nullable NSArray <NSString *> *)otherStrings {
