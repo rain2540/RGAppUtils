@@ -19,10 +19,10 @@
         return @"";
     } else {
         NSString *string = [NSString stringWithFormat:@"%@", self];
-        BOOL condition = NO;
         if (otherStrings == nil) {
             return string;
         } else {
+            BOOL condition = NO;
             for (NSString *otherString in otherStrings) {
                 condition = condition || [string isEqualToString:otherString];
             }
