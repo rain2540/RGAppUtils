@@ -10,7 +10,7 @@
 
 @implementation NSObject (RGAppUtils)
 
-- (nonnull NSString *)rg_withoutNull {
+- (nonnull NSString *)rg_clearNull {
     return [self rg_clearNilAndOtherStrings:nil];
 }
 
