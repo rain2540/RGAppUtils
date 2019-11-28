@@ -17,6 +17,8 @@
  */
 - (nonnull NSString *)rg_clearNull;
 
+/// 清除 nil 和 NSNull 对象，以及其他需要清除的字符串，并返回字符串
+/// @param otherStrings 其他需要清除的字符串
 - (nonnull NSString *)rg_clearNilAndOtherStrings:(nullable NSArray <NSString *> *)otherStrings;
 
 /**
