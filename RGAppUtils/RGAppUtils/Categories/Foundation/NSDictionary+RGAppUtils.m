@@ -45,7 +45,7 @@
             id tempObj = self[keyName];
             if ([tempObj isKindOfClass:[NSDictionary class]]) {
                 // 如果是字典, 递归, 遍历下一层
-                if ([value rg_withoutNull].length > 0) {
+                if ([value rg_clearNull].length > 0) {
                     return value;
                 } else {
                     value = [tempObj rg_valueForKey:key];
@@ -54,7 +54,7 @@
                 // 如果是数组，只取第0个数据，并且传值递归
                 if ([tempObj count] >= 1) {
                     for (NSInteger i = 0; i < [tempObj count]; i++) {
-                        if ([value rg_withoutNull].length > 0) {
+                        if ([value rg_clearNull].length > 0) {
                             return value;
                         } else {
                             value = [tempObj[i] rg_valueForKey:key];
@@ -69,7 +69,7 @@
 
 - (nonnull NSString *)rg_stringForKey:(nonnull NSString *)key {
     id value = [self rg_valueForKey:key];
-    NSString *string = [value rg_withoutNull];
+    NSString *string = [value rg_clearNull];
     return string;
 }
 
