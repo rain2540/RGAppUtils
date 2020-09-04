@@ -23,6 +23,10 @@
              inViewController:(UIViewController *)viewController
                       actions:(NSArray *)actions;
 
++ (UIAlertController *)rg_alertWithTitle:(NSString *)title
+                                 message:(NSString *)message
+                                 actions:(NSArray<UIAlertAction *> *)actions;
+
 /**
  在视图中添加 ActionSheet
 

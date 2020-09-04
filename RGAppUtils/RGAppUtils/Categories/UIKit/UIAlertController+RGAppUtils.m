@@ -22,6 +22,18 @@
                            actions:actions];
 }
 
++ (UIAlertController *)rg_alertWithTitle:(NSString *)title
+                                 message:(NSString *)message
+                                 actions:(NSArray<UIAlertAction *> *)actions
+{
+    UIAlertController *alert =
+    [UIAlertController rg_alertControllerWithTitle:title
+                                           message:message
+                                    preferredStyle:UIAlertControllerStyleAlert
+                                           actions:actions];
+    return alert;
+}
+
 + (void)rg_showActionSheetWithTitle:(NSString *)title
                             message:(NSString *)message
                    inViewController:(UIViewController *)viewController
@@ -49,6 +61,21 @@
         [alertController addAction:action];
     }
     [viewController presentViewController:alertController animated:YES completion:nil];
+}
+
++ (UIAlertController *)rg_alertControllerWithTitle:(NSString *)title
+                                           message:(NSString *)message
+                                    preferredStyle:(UIAlertControllerStyle)style
+                                           actions:(NSArray<UIAlertAction *> *)actions
+{
+    UIAlertController *alertController =
+    [UIAlertController alertControllerWithTitle:title
+                                        message:message
+                                 preferredStyle:style];
+    for (UIAlertAction *action in actions) {
+        [alertController addAction:action];
+    }
+    return alertController;
 }
 
 @end
