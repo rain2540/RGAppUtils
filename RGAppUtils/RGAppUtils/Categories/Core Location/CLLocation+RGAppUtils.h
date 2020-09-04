@@ -10,12 +10,8 @@
 
 @interface CLLocation (RGAppUtils)
 
-/**
- 百度坐标 ---> 火星坐标
-
- @param baiduCoordinate 记录百度坐标经纬度的结构体
- @return 记录火星坐标经纬度的结构体
- */
+/// 百度坐标 ---> 火星坐标
+/// @param baiduCoordinate 记录百度坐标经纬度的结构体
 + (CLLocationCoordinate2D)rg_locationMarsFromBaidu:(CLLocationCoordinate2D)baiduCoordinate;
 
 /**
