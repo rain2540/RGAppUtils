@@ -21,7 +21,7 @@
 + (void)rg_showAlertWithTitle:(NSString *)title
                       message:(NSString *)message
              inViewController:(UIViewController *)viewController
-                      actions:(NSArray *)actions;
+                      actions:(NSArray<UIAlertAction *> *)actions;
 
 + (UIAlertController *)rg_alertWithTitle:(NSString *)title
                                  message:(NSString *)message
@@ -38,7 +38,7 @@
 + (void)rg_showActionSheetWithTitle:(NSString *)title
                             message:(NSString *)message
                    inViewController:(UIViewController *)viewController
-                            actions:(NSArray *)actions;
+                            actions:(NSArray<UIAlertAction *> *)actions;
 
 + (UIAlertController *)rg_actionSheetWithTitle:(NSString *)title
                                        message:(NSString *)message

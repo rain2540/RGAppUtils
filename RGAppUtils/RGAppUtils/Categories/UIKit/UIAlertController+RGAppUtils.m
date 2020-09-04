@@ -15,7 +15,7 @@
 + (void)rg_showAlertWithTitle:(NSString *)title
                       message:(NSString *)message
              inViewController:(UIViewController *)viewController
-                      actions:(NSArray *)actions
+                      actions:(NSArray<UIAlertAction *> *)actions
 {
     [[self class] rg_showWithTitle:title
                            message:message
@@ -39,7 +39,7 @@
 + (void)rg_showActionSheetWithTitle:(NSString *)title
                             message:(NSString *)message
                    inViewController:(UIViewController *)viewController
-                            actions:(NSArray *)actions
+                            actions:(NSArray<UIAlertAction *> *)actions
 {
     [[self class] rg_showWithTitle:title
                            message:message
