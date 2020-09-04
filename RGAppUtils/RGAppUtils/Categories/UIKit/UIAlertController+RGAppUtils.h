@@ -20,6 +20,10 @@
              inViewController:(UIViewController *)viewController
                       actions:(NSArray<UIAlertAction *> *)actions;
 
+/// 创建 alert
+/// @param title alert 标题
+/// @param message alert 内容
+/// @param actions 完成的 actions
 + (UIAlertController *)rg_alertWithTitle:(NSString *)title
                                  message:(NSString *)message
                                  actions:(NSArray<UIAlertAction *> *)actions;
@@ -34,6 +38,10 @@
                    inViewController:(UIViewController *)viewController
                             actions:(NSArray<UIAlertAction *> *)actions;
 
+/// 创建 action sheet
+/// @param title action sheet 标题
+/// @param message action sheet 内容
+/// @param actions 完成的 actions
 + (UIAlertController *)rg_actionSheetWithTitle:(NSString *)title
                                        message:(NSString *)message
                                        actions:(NSArray<UIAlertAction *> *)actions;
