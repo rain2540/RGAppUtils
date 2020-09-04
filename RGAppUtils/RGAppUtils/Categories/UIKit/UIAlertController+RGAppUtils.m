@@ -22,6 +22,18 @@
                            actions:actions];
 }
 
++ (UIAlertController *)rg_alertWithTitle:(NSString *)title
+                                 message:(NSString *)message
+                                 actions:(NSArray<UIAlertAction *> *)actions
+{
+    UIAlertController *alert =
+    [UIAlertController rg_alertControllerWithTitle:title
+                                           message:message
+                                    preferredStyle:UIAlertControllerStyleAlert
+                                           actions:actions];
+    return alert;
+}
+
 + (void)rg_showActionSheetWithTitle:(NSString *)title
                             message:(NSString *)message
                    inViewController:(UIViewController *)viewController
