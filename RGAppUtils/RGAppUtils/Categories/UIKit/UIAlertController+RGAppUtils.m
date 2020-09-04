@@ -46,6 +46,18 @@
                            actions:actions];
 }
 
++ (UIAlertController *)rg_actionSheetWithTitle:(NSString *)title
+                                       message:(NSString *)message
+                                       actions:(NSArray<UIAlertAction *> *)actions
+{
+    UIAlertController *actionSheet =
+    [UIAlertController rg_alertControllerWithTitle:title
+                                           message:message
+                                    preferredStyle:UIAlertControllerStyleActionSheet
+                                           actions:actions];
+    return actionSheet;
+}
+
 #pragma mark Private Method
 + (void)rg_showWithTitle:(NSString *)title
                  message:(NSString *)message

@@ -40,4 +40,8 @@
                    inViewController:(UIViewController *)viewController
                             actions:(NSArray *)actions;
 
++ (UIAlertController *)rg_actionSheetWithTitle:(NSString *)title
+                                       message:(NSString *)message
+                                       actions:(NSArray<UIAlertAction *> *)actions;
+
 @end
