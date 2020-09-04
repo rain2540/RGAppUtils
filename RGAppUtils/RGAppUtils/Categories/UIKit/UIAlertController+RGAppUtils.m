@@ -10,10 +10,12 @@
 
 @implementation UIAlertController (RGAppUtils)
 
+#pragma mark Public
+
 + (void)rg_showAlertWithTitle:(NSString *)title
                       message:(NSString *)message
              inViewController:(UIViewController *)viewController
-                      actions:(NSArray *)actions
+                      actions:(NSArray<UIAlertAction *> *)actions
 {
     [[self class] rg_showWithTitle:title
                            message:message
@@ -37,7 +39,7 @@
 + (void)rg_showActionSheetWithTitle:(NSString *)title
                             message:(NSString *)message
                    inViewController:(UIViewController *)viewController
-                            actions:(NSArray *)actions
+                            actions:(NSArray<UIAlertAction *> *)actions
 {
     [[self class] rg_showWithTitle:title
                            message:message
@@ -46,20 +48,32 @@
                            actions:actions];
 }
 
-#pragma mark Private Method
++ (UIAlertController *)rg_actionSheetWithTitle:(NSString *)title
+                                       message:(NSString *)message
+                                       actions:(NSArray<UIAlertAction *> *)actions
+{
+    UIAlertController *actionSheet =
+    [UIAlertController rg_alertControllerWithTitle:title
+                                           message:message
+                                    preferredStyle:UIAlertControllerStyleActionSheet
+                                           actions:actions];
+    return actionSheet;
+}
+
+
+#pragma mark - Private
+
 + (void)rg_showWithTitle:(NSString *)title
                  message:(NSString *)message
           preferredStyle:(UIAlertControllerStyle)style
         inViewController:(UIViewController *)viewController
-                 actions:(NSArray *)actions
+                 actions:(NSArray<UIAlertAction *> *)actions
 {
     UIAlertController *alertController =
-    [UIAlertController alertControllerWithTitle:title
-                                        message:message
-                                 preferredStyle:style];
-    for (UIAlertAction *action in actions) {
-        [alertController addAction:action];
-    }
+    [UIAlertController rg_alertControllerWithTitle:title
+                                           message:message
+                                    preferredStyle:style
+                                           actions:actions];
     [viewController presentViewController:alertController animated:YES completion:nil];
 }
 
