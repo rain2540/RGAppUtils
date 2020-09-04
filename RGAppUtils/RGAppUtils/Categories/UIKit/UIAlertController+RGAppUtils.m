@@ -51,4 +51,19 @@
     [viewController presentViewController:alertController animated:YES completion:nil];
 }
 
++ (UIAlertController *)rg_alertControllerWithTitle:(NSString *)title
+                                           message:(NSString *)message
+                                    preferredStyle:(UIAlertControllerStyle)style
+                                           actions:(NSArray<UIAlertAction *> *)actions
+{
+    UIAlertController *alertController =
+    [UIAlertController alertControllerWithTitle:title
+                                        message:message
+                                 preferredStyle:style];
+    for (UIAlertAction *action in actions) {
+        [alertController addAction:action];
+    }
+    return alertController;
+}
+
 @end
