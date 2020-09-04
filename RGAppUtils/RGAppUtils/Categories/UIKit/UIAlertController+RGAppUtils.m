@@ -10,6 +10,8 @@
 
 @implementation UIAlertController (RGAppUtils)
 
+#pragma mark Public
+
 + (void)rg_showAlertWithTitle:(NSString *)title
                       message:(NSString *)message
              inViewController:(UIViewController *)viewController
@@ -58,20 +60,20 @@
     return actionSheet;
 }
 
-#pragma mark Private Method
+
+#pragma mark - Private
+
 + (void)rg_showWithTitle:(NSString *)title
                  message:(NSString *)message
           preferredStyle:(UIAlertControllerStyle)style
         inViewController:(UIViewController *)viewController
-                 actions:(NSArray *)actions
+                 actions:(NSArray<UIAlertAction *> *)actions
 {
     UIAlertController *alertController =
-    [UIAlertController alertControllerWithTitle:title
-                                        message:message
-                                 preferredStyle:style];
-    for (UIAlertAction *action in actions) {
-        [alertController addAction:action];
-    }
+    [UIAlertController rg_alertControllerWithTitle:title
+                                           message:message
+                                    preferredStyle:style
+                                           actions:actions];
     [viewController presentViewController:alertController animated:YES completion:nil];
 }
 
