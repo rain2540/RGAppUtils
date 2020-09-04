@@ -40,6 +40,7 @@
 
 @end
 
+
 @interface NSDate (Elements)
 
 /**
@@ -86,6 +87,7 @@
 
 @end
 
+
 @interface NSDate (Trans)
 
 /**
@@ -112,5 +114,17 @@
  */
 + (NSString *)rg_secondFormatTime:(NSInteger)totalSecond
                           hasHour:(BOOL)hasHour;
+
+@end
+
+
+@interface NSDate (Tools)
+
+/**
+ 获取一年以后的时间对象
+
+ @return 一年以后的时间对象
+ */
+- (NSDate *)rg_oneYearLater;
 
 @end

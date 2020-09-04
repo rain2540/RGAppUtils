@@ -10,13 +10,28 @@
 
 @implementation NSObject (RGAppUtils)
 
-- (nonnull NSString *)rg_withoutNull {
+- (nonnull NSString *)rg_clearNull {
+    return [self rg_clearNilAndOtherStrings:nil];
+}
+
+- (nonnull NSString *)rg_clearNilAndOtherStrings:(nullable NSArray <NSString *> *)otherStrings {
     if (self == nil || [self isKindOfClass:[NSNull class]]) {
         return @"";
-    } else if ([self isKindOfClass:[NSNumber class]]) {
-        return [NSString stringWithFormat:@"%@", self];
     } else {
-        return [NSString stringWithFormat:@"%@", self];
+        NSString *string = [NSString stringWithFormat:@"%@", self];
+        if (otherStrings == nil) {
+            return string;
+        } else {
+            BOOL condition = NO;
+            for (NSString *otherString in otherStrings) {
+                condition = condition || [string isEqualToString:otherString];
+            }
+            if (condition) {
+                return @"";
+            } else {
+                return string;
+            }
+        }
     }
 }
 

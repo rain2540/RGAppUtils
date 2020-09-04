@@ -38,7 +38,7 @@
 
 + (BOOL)rg_isIPhoneXSeries {
     BOOL iPhoneXSeries = NO;
-    if ([UIDevice currentDevice].userInterfaceIdiom != UIUserInterfaceIdiomPhone) {
+    if (![UIDevice rg_isPhone]) {
         return iPhoneXSeries;
     }
     
@@ -168,6 +168,11 @@
     if ([platform isEqualToString:@"iPhone10,3"] || [platform isEqualToString:@"iPhone10,6"]) {
         NSLog(@"RGAppUtils Device Type: iPhone X");
         return DeviceType_iPhone_X;
+    }
+
+    if ([platform isEqualToString:@"iPhone11,8"]) {
+        NSLog(@"RGAppUtils Device Type: iPhone XR");
+        return DeviceType_iPhone_XR;
     }
 
     if ([platform isEqualToString:@"iPod1,1"]) {

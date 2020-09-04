@@ -27,6 +27,28 @@
 - (UIImage *)rg_base64Image;
 
 /**
+ 返回为 keyword 着色的 attributed string
+
+ @param keyword 需要着色的关键词
+ @param color keyword 的颜色
+ @return 完成 keyword 着色的 attributed string
+ */
+- (NSMutableAttributedString *)rg_attributedStringWithKeyword:(NSString *)keyword
+                                                 keywordColor:(UIColor *)color;
+
+/**
+ 返回为 keyword 设定颜色、字体的 attributed string
+
+ @param keyword 关键词
+ @param color keyword 的颜色
+ @param font keyword 的字体
+ @return 完成 keyword 颜色、字体设定的 attributed string
+ */
+- (NSMutableAttributedString *)rg_attributedStringWithKeyword:(NSString *)keyword
+                                                 keywordColor:(UIColor *)color
+                                                  keywordFont:(UIFont *)font;
+
+/**
  转换为 JSON 对象
 
  @return JSON 对象

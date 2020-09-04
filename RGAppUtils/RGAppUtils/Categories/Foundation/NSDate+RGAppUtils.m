@@ -28,6 +28,7 @@
 
 @end
 
+
 @implementation NSDate (Elements)
 
 - (NSInteger)rg_year {
@@ -67,6 +68,7 @@
 
 @end
 
+
 @implementation NSDate (Trans)
 
 + (NSDate *)rg_dateFromString:(NSString *)dateString {
@@ -99,6 +101,28 @@
         result = [NSString stringWithFormat:@"%02ld:%02ld",(long)minutes,(long)seconds];
     }
     return result;
+}
+
+@end
+
+
+@implementation NSDate (Tools)
+
+- (NSDate *)rg_oneYearLater {
+    NSInteger yearValue = [self rg_year];
+    NSInteger nextYearValue = yearValue + 1;
+
+    BOOL isLeapYear = (yearValue % 400 == 0)  || ((yearValue % 400 != 0) && (yearValue % 4 == 0));
+    BOOL nextYearIsLeap = (nextYearValue % 400 == 0) || ((nextYearValue % 400 != 0) && (nextYearValue % 4 == 0));
+
+    NSInteger monthValue = [self rg_month];
+    // 闰区间：如果下一年是闰年，那么今年 3 月 1 日到下一年 2 月 29 日之间的日子，就是闰区间
+    BOOL isLeapRange = (nextYearIsLeap && monthValue >= 3) || (isLeapYear && monthValue < 3);
+    NSTimeInterval startTimestamp = [self rg_timestamp];
+    // 开始日期在闰区间内，加 (366 - 1) 天，否则加 (365 - 1)天
+    NSTimeInterval oneYearLaterTimestamp = startTimestamp + (isLeapRange ? (366 - 1) : (365 - 1)) * 60 * 60 * 24;
+    NSDate *oneYearLater = [NSDate dateWithTimeIntervalSince1970:oneYearLaterTimestamp];
+    return oneYearLater;
 }
 
 @end

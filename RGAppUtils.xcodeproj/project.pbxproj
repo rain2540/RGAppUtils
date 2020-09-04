@@ -31,6 +31,8 @@
 		B784E66B1F46C68000D702AF /* UITabBar+RGAppUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B784E66A1F46C68000D702AF /* UITabBar+RGAppUtils.m */; };
 		B784E66E1F46C69400D702AF /* UIView+RGAppUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B784E66D1F46C69400D702AF /* UIView+RGAppUtils.m */; };
 		B784E6711F46C6A200D702AF /* UIViewController+RGAppUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B784E6701F46C6A200D702AF /* UIViewController+RGAppUtils.m */; };
+		B7B172072302454A00242ECD /* RGDesUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = B7B172062302454A00242ECD /* RGDesUtil.m */; };
+		B7FDC7FB22236FEE0051414C /* UITextField+RGAppUtitls.m in Sources */ = {isa = PBXBuildFile; fileRef = B7FDC7FA22236FEE0051414C /* UITextField+RGAppUtitls.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +85,10 @@
 		B784E66D1F46C69400D702AF /* UIView+RGAppUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RGAppUtils.m"; sourceTree = "<group>"; };
 		B784E66F1F46C6A200D702AF /* UIViewController+RGAppUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RGAppUtils.h"; sourceTree = "<group>"; };
 		B784E6701F46C6A200D702AF /* UIViewController+RGAppUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RGAppUtils.m"; sourceTree = "<group>"; };
+		B7B172052302454A00242ECD /* RGDesUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RGDesUtil.h; sourceTree = "<group>"; };
+		B7B172062302454A00242ECD /* RGDesUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RGDesUtil.m; sourceTree = "<group>"; };
+		B7FDC7F922236FEE0051414C /* UITextField+RGAppUtitls.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+RGAppUtitls.h"; sourceTree = "<group>"; };
+		B7FDC7FA22236FEE0051414C /* UITextField+RGAppUtitls.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+RGAppUtitls.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +168,7 @@
 			children = (
 				B73D43561F43D16F0048A97D /* RGDispatchQueue */,
 				B73D435A1F43D1CD0048A97D /* RGMainScreen */,
+				B7B172082302455300242ECD /* RGDesUtil */,
 			);
 			path = RGBuild;
 			sourceTree = "<group>";
@@ -184,20 +191,28 @@
 			path = RGMainScreen;
 			sourceTree = "<group>";
 		};
+		B742BFFA237D28530040A9A9 /* Core Location */ = {
+			isa = PBXGroup;
+			children = (
+				B784E6441F46C20300D702AF /* CLLocation+RGAppUtils.h */,
+				B784E6451F46C20300D702AF /* CLLocation+RGAppUtils.m */,
+			);
+			path = "Core Location";
+			sourceTree = "<group>";
+		};
 		B784E6421F46C20300D702AF /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				B784E6431F46C20300D702AF /* Cocoa */,
+				B742BFFA237D28530040A9A9 /* Core Location */,
+				B784E6431F46C20300D702AF /* Foundation */,
 				B784E64C1F46C20300D702AF /* UIKit */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
 		};
-		B784E6431F46C20300D702AF /* Cocoa */ = {
+		B784E6431F46C20300D702AF /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
-				B784E6441F46C20300D702AF /* CLLocation+RGAppUtils.h */,
-				B784E6451F46C20300D702AF /* CLLocation+RGAppUtils.m */,
 				B784E6461F46C20300D702AF /* NSBundle+RGAppUtils.h */,
 				B784E6471F46C20300D702AF /* NSBundle+RGAppUtils.m */,
 				B784E6481F46C20300D702AF /* NSDate+RGAppUtils.h */,
@@ -213,7 +228,7 @@
 				B784E65A1F46C58000D702AF /* NSUserDefaults+RGAppUtils.h */,
 				B784E65B1F46C58000D702AF /* NSUserDefaults+RGAppUtils.m */,
 			);
-			path = Cocoa;
+			path = Foundation;
 			sourceTree = "<group>";
 		};
 		B784E64C1F46C20300D702AF /* UIKit */ = {
@@ -231,12 +246,23 @@
 				B784E6671F46C66F00D702AF /* UINavigationBar+RGAppUtils.m */,
 				B784E6691F46C68000D702AF /* UITabBar+RGAppUtils.h */,
 				B784E66A1F46C68000D702AF /* UITabBar+RGAppUtils.m */,
+				B7FDC7F922236FEE0051414C /* UITextField+RGAppUtitls.h */,
+				B7FDC7FA22236FEE0051414C /* UITextField+RGAppUtitls.m */,
 				B784E66C1F46C69400D702AF /* UIView+RGAppUtils.h */,
 				B784E66D1F46C69400D702AF /* UIView+RGAppUtils.m */,
 				B784E66F1F46C6A200D702AF /* UIViewController+RGAppUtils.h */,
 				B784E6701F46C6A200D702AF /* UIViewController+RGAppUtils.m */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		B7B172082302455300242ECD /* RGDesUtil */ = {
+			isa = PBXGroup;
+			children = (
+				B7B172052302454A00242ECD /* RGDesUtil.h */,
+				B7B172062302454A00242ECD /* RGDesUtil.m */,
+			);
+			path = RGDesUtil;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,7 +291,7 @@
 		B73D43281F43CF410048A97D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = Smartech;
 				TargetAttributes = {
 					B73D432F1F43CF410048A97D = {
@@ -277,7 +303,7 @@
 			};
 			buildConfigurationList = B73D432B1F43CF410048A97D /* Build configuration list for PBXProject "RGAppUtils" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -325,11 +351,13 @@
 				B784E6681F46C66F00D702AF /* UINavigationBar+RGAppUtils.m in Sources */,
 				B784E6621F46C63B00D702AF /* UIDevice+RGAppUtils.m in Sources */,
 				B73D43351F43CF410048A97D /* main.m in Sources */,
+				B7B172072302454A00242ECD /* RGDesUtil.m in Sources */,
 				B784E6561F46C54B00D702AF /* NSFileManager+RGAppUtils.m in Sources */,
 				B7207D2A1F4A7B5B0001BEE9 /* NSString+RGAppUtils.m in Sources */,
 				B73D43591F43D16F0048A97D /* RGDispatchQueue.m in Sources */,
 				B784E6591F46C56D00D702AF /* NSObject+RGAppUtils.m in Sources */,
 				B784E64F1F46C20300D702AF /* CLLocation+RGAppUtils.m in Sources */,
+				B7FDC7FB22236FEE0051414C /* UITextField+RGAppUtitls.m in Sources */,
 				B784E66E1F46C69400D702AF /* UIView+RGAppUtils.m in Sources */,
 				B784E6711F46C6A200D702AF /* UIViewController+RGAppUtils.m in Sources */,
 			);
@@ -361,6 +389,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -417,6 +446,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";

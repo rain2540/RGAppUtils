@@ -15,5 +15,7 @@
 #define StandardUserDefaults        ([NSUserDefaults standardUserDefaults])
 #define DefaultFileManager          ([NSFileManager defaultManager])
 #define kAppKeyWindow               ([UIApplication sharedApplication].keyWindow)
+#define StatusBarFrame              ([UIApplication sharedApplication].statusBarFrame)
+#define StatusBarHeight             (CGRectGetHeight(StatusBarFrame))
 
 #endif /* RGAppConstant_h */
