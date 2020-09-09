@@ -25,4 +25,25 @@
     }
 }
 
+
++ (UIViewController *)rg_topViewControllerOf:(UIViewController *)rootVC {
+    UIViewController *topVC;
+
+    if ([rootVC presentedViewController] != nil) {
+        rootVC = [rootVC presentedViewController];
+    }
+
+    if ([rootVC isKindOfClass:[UITabBarController class]]) {
+        UITabBarController *tabBarController = (UITabBarController *)rootVC;
+        topVC = [[self class] rg_topViewControllerOf:[tabBarController selectedViewController]];
+    } else if ([rootVC isKindOfClass:[UINavigationController class]]) {
+        UINavigationController *navigationController = (UINavigationController *)rootVC;
+        topVC = [[self class] rg_topViewControllerOf:[navigationController visibleViewController]];
+    } else {
+        topVC = rootVC;
+    }
+
+    return topVC;
+}
+
 @end
