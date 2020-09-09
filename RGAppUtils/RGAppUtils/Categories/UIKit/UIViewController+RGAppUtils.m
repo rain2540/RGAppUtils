@@ -25,6 +25,11 @@
     }
 }
 
++ (UIViewController *)rg_topViewControllerOfKeyWindowRoot {
+    UIViewController *rootVC = [UIApplication sharedApplication].keyWindow.rootViewController;
+    UIViewController *topVC = [[self class] rg_topViewControllerOf:rootVC];
+    return topVC;
+}
 
 + (UIViewController *)rg_topViewControllerOf:(UIViewController *)rootVC {
     UIViewController *topVC;
