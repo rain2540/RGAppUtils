@@ -11,7 +11,6 @@
 
 #import "RGAppConstant.h"
 #import "RGUIConstant.h"
-#import "RGDispatchQueue.h"
 #import "RGMainScreen.h"
 
 #import "CLLocation+RGAppUtils.h"
