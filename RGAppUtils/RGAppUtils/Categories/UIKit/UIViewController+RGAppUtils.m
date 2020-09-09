@@ -24,16 +24,20 @@
     UIViewController *topVC;
 
     if ([rootVC presentedViewController] != nil) {
+        // 根视图是被 present 出来的
         rootVC = [rootVC presentedViewController];
     }
 
     if ([rootVC isKindOfClass:[UITabBarController class]]) {
+        // 根视图为 UITabBarController
         UITabBarController *tabBarController = (UITabBarController *)rootVC;
         topVC = [[self class] rg_topViewControllerOf:[tabBarController selectedViewController]];
     } else if ([rootVC isKindOfClass:[UINavigationController class]]) {
+        // 根视图为 UINavigationController
         UINavigationController *navigationController = (UINavigationController *)rootVC;
         topVC = [[self class] rg_topViewControllerOf:[navigationController visibleViewController]];
     } else {
+        // 根视图非导航类
         topVC = rootVC;
     }
 
