@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSArray (RGAppUtils)
 
+- (id)rg_objectAtIndex:(NSInteger)index;
+
 @end
 
 NS_ASSUME_NONNULL_END
