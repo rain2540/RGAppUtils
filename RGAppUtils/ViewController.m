@@ -18,6 +18,33 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+
+    NSArray *array = @[@"1", @"2", @"3", @"29"];
+
+    NSString *string1 = [array rg_objectAtIndex:1];
+    NSLog(@"%@", string1);
+
+    NSString *string_1 = [array rg_objectAtIndex:-1];
+    NSLog(@"%@", string_1);
+
+    if (array.rg_isEmpty) {
+        NSLog(@"array is empty");
+    } else {
+        NSLog(@"array is not empty");
+    }
+
+    NSArray *mappedArray = [array rg_map:^id _Nonnull(id  _Nonnull obj) {
+        return [obj stringByAppendingString:@"-1"];
+    }];
+    NSLog(@"%@", mappedArray);
+
+    NSArray *filterArray = [array rg_filter:^BOOL(id  _Nonnull obj) {
+        return ((NSString *)obj).length > 1;
+    }];
+    NSLog(@"%@", filterArray);
+
+    NSString *string = array.rg_joinedByString(@",");
+    NSLog(@"%@", string);
 }
 
 - (void)didReceiveMemoryWarning {
