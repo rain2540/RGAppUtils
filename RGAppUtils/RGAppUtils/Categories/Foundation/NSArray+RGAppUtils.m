@@ -22,4 +22,15 @@
     return self.count <= 0;
 }
 
+- (NSArray *)rg_map:(id(^)(id obj))map {
+    NSMutableArray *array = [NSMutableArray array];
+    for (id item in self) {
+        if (map) {
+            id newItem = map(item);
+            [array addObject:newItem];
+        }
+    }
+    return [array copy];
+}
+
 @end
