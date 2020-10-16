@@ -31,6 +31,7 @@
 		B784E66E1F46C69400D702AF /* UIView+RGAppUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B784E66D1F46C69400D702AF /* UIView+RGAppUtils.m */; };
 		B784E6711F46C6A200D702AF /* UIViewController+RGAppUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B784E6701F46C6A200D702AF /* UIViewController+RGAppUtils.m */; };
 		B7B172072302454A00242ECD /* RGDesUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = B7B172062302454A00242ECD /* RGDesUtil.m */; };
+		B7D942042539968B00F172F1 /* NSArray+RGAppUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B7D942032539968B00F172F1 /* NSArray+RGAppUtils.m */; };
 		B7FDC7FB22236FEE0051414C /* UITextField+RGAppUtitls.m in Sources */ = {isa = PBXBuildFile; fileRef = B7FDC7FA22236FEE0051414C /* UITextField+RGAppUtitls.m */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +85,8 @@
 		B784E6701F46C6A200D702AF /* UIViewController+RGAppUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RGAppUtils.m"; sourceTree = "<group>"; };
 		B7B172052302454A00242ECD /* RGDesUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RGDesUtil.h; sourceTree = "<group>"; };
 		B7B172062302454A00242ECD /* RGDesUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RGDesUtil.m; sourceTree = "<group>"; };
+		B7D942022539968B00F172F1 /* NSArray+RGAppUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+RGAppUtils.h"; sourceTree = "<group>"; };
+		B7D942032539968B00F172F1 /* NSArray+RGAppUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+RGAppUtils.m"; sourceTree = "<group>"; };
 		B7FDC7F922236FEE0051414C /* UITextField+RGAppUtitls.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+RGAppUtitls.h"; sourceTree = "<group>"; };
 		B7FDC7FA22236FEE0051414C /* UITextField+RGAppUtitls.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+RGAppUtitls.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -200,6 +203,8 @@
 		B784E6431F46C20300D702AF /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				B7D942022539968B00F172F1 /* NSArray+RGAppUtils.h */,
+				B7D942032539968B00F172F1 /* NSArray+RGAppUtils.m */,
 				B784E6461F46C20300D702AF /* NSBundle+RGAppUtils.h */,
 				B784E6471F46C20300D702AF /* NSBundle+RGAppUtils.m */,
 				B784E6481F46C20300D702AF /* NSDate+RGAppUtils.h */,
@@ -337,6 +342,7 @@
 				B73D43381F43CF410048A97D /* AppDelegate.m in Sources */,
 				B784E6681F46C66F00D702AF /* UINavigationBar+RGAppUtils.m in Sources */,
 				B784E6621F46C63B00D702AF /* UIDevice+RGAppUtils.m in Sources */,
+				B7D942042539968B00F172F1 /* NSArray+RGAppUtils.m in Sources */,
 				B73D43351F43CF410048A97D /* main.m in Sources */,
 				B7B172072302454A00242ECD /* RGDesUtil.m in Sources */,
 				B784E6561F46C54B00D702AF /* NSFileManager+RGAppUtils.m in Sources */,
