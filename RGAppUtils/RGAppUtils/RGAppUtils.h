@@ -14,6 +14,7 @@
 #import "RGMainScreen.h"
 
 #import "CLLocation+RGAppUtils.h"
+#import "NSArray+RGAppUtils.h"
 #import "NSBundle+RGAppUtils.h"
 #import "NSDate+RGAppUtils.h"
 #import "NSDictionary+RGAppUtils.h"
