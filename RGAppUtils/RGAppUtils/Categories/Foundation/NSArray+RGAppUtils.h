@@ -20,6 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (NSArray *)rg_filter:(BOOL(^)(id obj))filter;
 
+- (NSString *(^)(NSString *separator))rg_joinedByString;
+
 @end
 
 NS_ASSUME_NONNULL_END

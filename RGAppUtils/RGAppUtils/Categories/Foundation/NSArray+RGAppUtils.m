@@ -46,4 +46,10 @@
     return [array copy];
 }
 
+- (NSString *(^)(NSString *separator))rg_joinedByString {
+    return ^(NSString *separator) {
+        return [self componentsJoinedByString:separator];
+    };
+}
+
 @end
