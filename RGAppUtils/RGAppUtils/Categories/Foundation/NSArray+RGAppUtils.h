@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (id)rg_objectAtIndex:(NSInteger)index;
 
+- (BOOL)rg_isEmpty;
+
 @end
 
 NS_ASSUME_NONNULL_END
