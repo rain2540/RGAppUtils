@@ -18,6 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (NSArray *)rg_map:(id(^)(id obj))map;
 
+- (NSArray *)rg_filter:(BOOL(^)(id obj))filter;
+
 @end
 
 NS_ASSUME_NONNULL_END

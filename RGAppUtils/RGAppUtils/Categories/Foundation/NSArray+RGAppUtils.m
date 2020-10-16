@@ -33,4 +33,17 @@
     return [array copy];
 }
 
+- (NSArray *)rg_filter:(BOOL(^)(id obj))filter {
+    NSMutableArray *array = [NSMutableArray array];
+    for (id item in self) {
+        if (filter) {
+            BOOL isFit = filter(item);
+            if (isFit) {
+                [array addObject:item];
+            }
+        }
+    }
+    return [array copy];
+}
+
 @end
