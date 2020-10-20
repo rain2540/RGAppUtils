@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (id)rg_objectAtIndex:(NSInteger)index;
 
+/// 判断数组是否为空
 - (BOOL)rg_isEmpty;
 
 - (NSArray *)rg_map:(id(^)(id obj))map;
